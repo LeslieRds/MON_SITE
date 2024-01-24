@@ -12,17 +12,19 @@
   </head>
 
   <body>
-    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+    <div class="banner" style="background-image: url(https://res.cloudinary.com/ddt8brfwz/image/upload/v1706098448/adrian-infernus-GLf7bAwCdYg-unsplash_nbmeuf.jpg);">
       <div class="container">
-        <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
-        <p>Change your life and learn to code at one of our campuses around the world.</p>
+        <h1>My Ikigaï</h1>
+        <p>Le studio web créatif et perché</p>
       </div>
     </div>
 
     <%= render "shared/flashes" %>
+    <%= render "shared/footer" %>
 
     <%= yield %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
   </body>
 </html>
