@@ -1,3 +1,24 @@
+// CSS for the contenu
+.contenu {
+  min-height: 100%;
+  position: relative;
+}
+
+
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+body {
+	display : table;
+	width: 100%;
+}
+footer {
+	display : table-row;
+	height: 100px;
+}
+
+
 // CSS for the banner
 .banner {
   background-size: cover;
@@ -20,6 +41,21 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
+// CSS for the cards
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
 
 // CSS for the footer
 .footer {
@@ -27,9 +63,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 75px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
+  opacity: 0.8;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
 .footer-links {
   display: flex;
