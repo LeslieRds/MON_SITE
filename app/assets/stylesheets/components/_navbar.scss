@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: whitesmoke
+  color: whitesmoke;
+  height: 100px;
 }
 
 .navbar-lewagon {
@@ -10,6 +11,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: #03283D;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -17,5 +19,12 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 100px;
+  position: center;
+}
+
+.nav-link {
+  color: whitesmoke;
+  font-size: 20px;
+  margin-right: 20px;
 }
