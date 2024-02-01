@@ -1,10 +1,16 @@
-// CSS for the contenu
-.contenu {
-  min-height: 100%;
-  position: relative;
+// CSS for the main content / background
+body{
+  min-height: 100vh;
+  width: 100%;
+}
+// CSS fot the navbar
+.navbar {
+background-color: #F4F4F4;
 }
 
-
+.nav-item {
+  color:#17001e;
+}
 // CSS for the banner
 .banner {
   background-size: cover;
@@ -15,7 +21,7 @@
 
 .banner h1 {
   margin: 0;
-  color: white;
+  color: #17001e;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 150px;
   font-weight: bold;
@@ -23,7 +29,7 @@
 
 .banner p {
   font-size: 50px;
-  color: white;
+  color: #17001e;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }

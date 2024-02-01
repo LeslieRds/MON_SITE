@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <!-- head et metas -->
   <head>
     <title>My Ikigaï : studio web en Tarentaise </title>
     <meta charset="UTF-8">
@@ -16,75 +17,71 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
   <body>
-
-    <div id="contenu" style="background-image: url(https://res.cloudinary.com/ddt8brfwz/image/upload/v1706205039/will-turner-XAhXe3gY9OQ-unsplash_h5qpz3.jpg);">
-      <header>
-        <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-          <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">My Iki-quoi?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Mes services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Qui suis-je?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Mes réalisations</a>
-                  </li>
-              </ul>
-            </div>
-            <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1706098486/logo_blanc_sur_fonds_transparent_mqhhyt.png" /></a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto">
-                  <li class="nav-item dropdown">
-                    <img class="dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1706205684/bars-solid_z7bbcu.svg" />
-                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" data-turbo-method="delete" href="#">Log out</a>
-                    </div>
-                  </li>
-                  <!--li class="nav-item"-->
-                  <!--/li-->
-              </ul>
-            </div>
+  <!-- body - navbar + header -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1706098486/logo_noir_sur_transparent_guxb9u.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="nav nav-pills navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#scrollspyHeading1">Qui suis-je?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">My Iki-quoi?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3">Mes services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading4">Mes réalisations</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="banner">
-          <div class="container">
-            <h1>My Ikigaï</h1>
-            <p>Le studio web créatif et perché</p>
-          </div>
-          <%= render "shared/flashes" %>
+      </nav>
+      <header class="banner">
+        <div class="container">
+          <h1>My Ikigaï</h1>
+          <p>Le studio web créatif et perché</p>
         </div>
+        <%= render "shared/flashes" %>
       </header>
-
-      <footer>
-        <div class="footer">
-          <div class="footer-links">
-            <h4> Suivez-moi! </h4>
-            <a href="https://github.com/LeslieRds/" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/leslierados/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/LeslieRds/" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/leslierados/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          </div>
-          <div class="footer-contact">
-            <h4> hello@myikigai.fr </h4>
-          </div>
-          <div class="footer-copyright">
-            Ce site a été fait avec <i class="fas fa-heart"></i> par le studio web créatif et perché My Ikigaï
-          </div>
-        </div>
-      </footer>
-      <%= yield %>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
     </div>
+    <!-- body - main -->
+    <main role="main">
+      <div class="container">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+          <h4 id="scrollspyHeading1">Qui suis-je?</h4>
+          <img src="https://fr.freepik.com/photos-gratuite/champ-lavande-au-coucher-du-soleil-pres-valensole_35758793.htm#query=nature&position=2&from_view=keyword&track=sph&uuid=4f15be28-5d76-4cdd-a878-8737c7da3dfe">
+        <h4 id="scrollspyHeading2">My Iki-quoi?</h4>
+        <h4 id="scrollspyHeading3">Mes services</h4>
+        <h4 id="scrollspyHeading4">Mes réalisations</h4>
+      </div>
+    <footer>
+      <div class="footer">
+        <div class="footer-links">
+          <h4> Suivez-moi! </h4>
+          <a href="https://github.com/LeslieRds/" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/leslierados/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/LeslieRds/" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/leslierados/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="footer-contact">
+          <h4> hello@myikigai.fr </h4>
+        </div>
+        <div class="footer-copyright">
+          Fait avec <i class="fas fa-heart"></i> par My Ikigaï web studio - 2024
+        </div>
+      </div>
+    </footer>
+    <%= yield %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
   </body>
 </html>
