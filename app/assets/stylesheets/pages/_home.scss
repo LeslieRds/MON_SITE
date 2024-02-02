@@ -47,17 +47,20 @@ main h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  background-color: #ebeced;;
+  background: none;
 }
 
+.main-container .btn {
+  position: center;
+}
 // CSS section 1
 .main-container .container1{
   background-color: #9e81a7;
 }
 
-
+.main-container .container1 .btn{
+  position: center;
+}
 // CSS section 2
 .main-container .container2{
   background-color: #f4f4f4;
