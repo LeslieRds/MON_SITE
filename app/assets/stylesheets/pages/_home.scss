@@ -3,7 +3,7 @@ body{
   min-height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #ebeced;
+  background-color: #F8F9FA;
 }
 
 // CSS fot the navbar
@@ -17,7 +17,7 @@ background-color: #F4F4F4;
 
 // CSS for the scrollspy
 main h1 {
-  scroll-margin-top: 150px; /* Ajustez cette valeur à la hauteur de votre navbar */
+  scroll-margin-top: 150px;
 }
 
 // CSS for the banner
@@ -26,6 +26,7 @@ main h1 {
   background-position: center;
   padding: 125px 0 25px 0;
   text-align: center;
+  background-color: #F8F9FA;
 }
 
 .banner h1 {
@@ -44,37 +45,80 @@ main h1 {
 
 // CSS des sections
 .main-container{
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
-  background: none;
+  background-color: #F8F9FA;
 }
 
-.main-container .btn {
-  position: center;
-}
 // CSS section 1
 .main-container .container1{
   background-color: #9e81a7;
+  padding: 100px;
+}
+
+.main-container .container1 h1{
+  text-align: center;
+}
+
+.main-container .container1 p{
+margin-top: 20px;
+width: fit-content;
 }
 
 .main-container .container1 .btn{
+  margin-top: 20px;
   position: center;
 }
+
 // CSS section 2
 .main-container .container2{
   background-color: #f4f4f4;
+  padding: 100px;
 }
 
+.main-container .container2 h1{
+  text-align: center;
+}
+
+.main-container .container2 p{
+  margin-top: 20px;
+  justify-content: justify;
+  }
+
+.main-container .container2 .btn{
+  background-color: #9e81a7;
+  margin-top: 20px;
+  position: center;
+}
 
 // CSS section 3
 .main-container .container3{
   background-color: #9e81a7;
+  padding: 100px;
 }
 
+.main-container .container3 h1{
+  text-align: center;
+}
 
+.main-container .container3 .btn{
+  margin-top: 20px;
+  position: center;
+}
 
 // CSS section 4
 .main-container .container4{
   background-color: #f4f4f4;
+  padding: 100px;
+}
+
+.main-container .container4 h1{
+  text-align: center;
+}
+
+.main-container .container4 .btn{
+  background-color: #9e81a7;
+  margin-top: 20px;
+  position: center;
 }
