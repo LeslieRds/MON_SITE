@@ -1,8 +1,10 @@
 // CSS for the main content / background
-body{
+.body{
   min-height: 100vh;
   width: 100%;
+  position: relative;
 }
+
 // CSS fot the navbar
 .navbar {
 background-color: #F4F4F4;
@@ -11,6 +13,14 @@ background-color: #F4F4F4;
 .nav-item {
   color:#17001e;
 }
+
+// CSS for the scrollspy
+.h1 {
+  scroll-margin-top: 150px; /* Ajustez cette valeur à la hauteur de votre navbar */
+}
+
+
+
 // CSS for the banner
 .banner {
   background-size: cover;
