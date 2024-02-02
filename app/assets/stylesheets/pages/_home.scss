@@ -1,12 +1,13 @@
 // CSS for the main content / background
-.body{
+body{
   min-height: 100vh;
   width: 100%;
   position: relative;
+  background-color: #ebeced;
 }
 
 // CSS fot the navbar
-.navbar {
+nav {
 background-color: #F4F4F4;
 }
 
@@ -15,22 +16,19 @@ background-color: #F4F4F4;
 }
 
 // CSS for the scrollspy
-.h1 {
+main h1 {
   scroll-margin-top: 150px; /* Ajustez cette valeur à la hauteur de votre navbar */
 }
-
-
 
 // CSS for the banner
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 125px 0 25px 0;
   text-align: center;
 }
 
 .banner h1 {
-  margin: 0;
   color: #17001e;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 150px;
@@ -42,4 +40,37 @@ background-color: #F4F4F4;
   color: #17001e;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+// CSS des sections
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #ebeced;;
+}
+
+// CSS section 1
+.main-container .container1{
+  background-color: #9e81a7;
+}
+
+
+// CSS section 2
+.main-container .container2{
+  background-color: #f4f4f4;
+}
+
+
+// CSS section 3
+.main-container .container3{
+  background-color: #9e81a7;
+}
+
+
+// CSS section 4
+.main-container .container4{
+  background-color: #f4f4f4;
 }
