@@ -12,7 +12,7 @@ background-color: #F4F4F4;
 }
 
 .nav-item {
-  color:#17001e;
+  color:#000000;
 }
 
 // CSS for the scrollspy
@@ -30,7 +30,7 @@ main h1 {
 }
 
 .banner h1 {
-  color: #17001e;
+  color: black;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 150px;
   font-weight: bold;
@@ -38,7 +38,7 @@ main h1 {
 
 .banner p {
   font-size: 50px;
-  color: #17001e;
+  color:black;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
@@ -53,17 +53,42 @@ main h1 {
 
 // CSS section 1
 .main-container .container1{
-  background-color: #9e81a7;
+  background-color: #7373ff;
   padding: 100px;
+  box-shadow: 7px 7px black;
+  border: black;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .main-container .container1 h1{
   text-align: center;
 }
 
-.main-container .container1 p{
-margin-top: 20px;
-width: fit-content;
+.main-container .container1 .section1{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.main-container .container1 .section1 img{
+  height: 25vw;
+  width: 25vw;
+  border-radius: 50%;
+  box-shadow: 7px 7px black;
+  border: black;
+  margin-right: 50px;
+  margin-top: 200px;
+}
+
+.main-container .container1 .section1 p{
+  margin-top: 20px;
+  width: fit-content;
+  text-align: justify;
+  background-color: #F8F9FA;
+  border: solid black;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .main-container .container1 .btn{
@@ -73,33 +98,70 @@ width: fit-content;
 
 // CSS section 2
 .main-container .container2{
-  background-color: #f4f4f4;
+  background-color: #ff6bd5;
   padding: 100px;
+  box-shadow: 7px 7px black;
+  border: black;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .main-container .container2 h1{
   text-align: center;
 }
 
-.main-container .container2 p{
+.main-container .container2 .section1{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.main-container .container2 .section1 img{
+  height: 25vw;
+  width: 25vw;
+  border-radius: 50%;
+  box-shadow: 7px 7px black;
+  border: black;
+  margin-left: 50px;
+  margin-top: 200px;
+}
+
+.main-container .container2 .section1 p{
   margin-top: 20px;
-  justify-content: justify;
+  width: fit-content;
+  text-align: justify;
+  background-color: #F8F9FA;
+  border: solid black;
+  padding: 20px;
+  border-radius: 10px;
   }
 
 .main-container .container2 .btn{
-  background-color: #9e81a7;
+  border: black;
   margin-top: 20px;
   position: center;
 }
 
 // CSS section 3
 .main-container .container3{
-  background-color: #9e81a7;
+  background-color: #38dce8;
   padding: 100px;
+  box-shadow: 7px 7px black;
+  border: black;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .main-container .container3 h1{
   text-align: center;
+}
+
+.main-container .container3 #carouselExampleCaptions{
+  border-radius: 10px;
+  box-shadow: 7px 7px black;
+    & h5{
+      color: black;
+    }
 }
 
 .main-container .container3 .btn{
@@ -109,8 +171,12 @@ width: fit-content;
 
 // CSS section 4
 .main-container .container4{
-  background-color: #f4f4f4;
+  background-color: #b3ff56;
   padding: 100px;
+  box-shadow: 7px 7px black;
+  border: black;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .main-container .container4 h1{
@@ -118,7 +184,13 @@ width: fit-content;
 }
 
 .main-container .container4 .btn{
-  background-color: #9e81a7;
   margin-top: 20px;
   position: center;
+  border: black;
+}
+
+.btn{
+  border: dashed solid;
+  color: black;
+  box-shadow: 5px 5px black;
 }
