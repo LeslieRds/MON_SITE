@@ -1,0 +1,28 @@
+// CSS section 1
+.main-container .container1{
+  background-color: #7373ff;
+  padding: 100px;
+  box-shadow: 7px 7px black;
+  border: black;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.main-container .container1 h1{
+  text-align: center;
+}
+
+.main-container .container1 .section1{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.main-container .container1 .section1 p{
+  margin-top: 20px;
+  width: fit-content;
+  text-align: justify;
+  background-color: #F8F9FA;
+  border: solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
