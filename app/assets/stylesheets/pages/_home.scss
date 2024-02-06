@@ -194,3 +194,29 @@ main h1 {
   color: black;
   box-shadow: 5px 5px black;
 }
+
+// CSS section 5
+.main-container .container5{
+  background-color: #be56ff;
+  padding: 100px;
+  box-shadow: 7px 7px black;
+  border: black;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.main-container .container5 h1{
+  text-align: center;
+}
+
+.main-container .container5 .btn{
+  margin-top: 20px;
+  position: center;
+  border: black;
+}
+
+.btn{
+  border: dashed solid;
+  color: black;
+  box-shadow: 5px 5px black;
+}
