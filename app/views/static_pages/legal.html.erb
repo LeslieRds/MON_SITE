@@ -1,84 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <!-- head et metas -->
-  <head>
-    <title>My Ikigaï : studio web en Tarentaise </title>
-    <meta charset="UTF-8">
-    <meta name="description" content="My Ikigaï est un studio de développement web, situé à Bourg-Saint-Maurice en Tarentaise en Savoie en France. Il est spécialisé dans le développement fullstack d'applications mobile et de sites web. Une démarche mobile First et orienté utilisateur. Nous proposons des packs pour les créateurs d'entreprise.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow">
-
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <link rel="icon" href="<%= asset_path 'logo.png' %>" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Bubbler+One&family=Italiana&family=Poiret+One&family=Poppins&display=swap" rel="stylesheet">
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
-  <body>
-
-  <!-- Navbar + Header -->
-    <div class="container">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg fixed-top bg-light">
-        <div class="container-fluid">
-
-          <!-- logo -->
-          <a class="navbar-brand" href="#">
-            <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1706098486/logo_noir_sur_transparent_guxb9u.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top"></a>
-          <!-- logo -->
-
-          <!-- bouton et menu responsive -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="nav nav-pills navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#scrollspyHeading1">Qui suis-je?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading2">My Iki-quoi?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading3">Mes services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading4">Mes réalisations</a>
-              </li>
-            </ul>
-          <!-- bouton et menu responsive -->
-
-          <!-- call to action -->
-          <a href="#!" class="btn bsb-btn-2xl btn-outline-secondary rounded mb-0 text-nowrap">Contact</a>
-          <!-- call to action -->
-          </div>
-        </div>
-      </nav>
-      <!-- Navbar -->
-
-      <!-- Header -->
-      <header class="banner">
-        <div class="container">
-          <h1>My Ikigaï</h1>
-          <p>Le studio web créatif et perché</p>
-        </div>
-        <%= render "shared/flashes" %>
-      </header>
-      <!-- Header -->
-    </div>
-    <!-- Navbar + Header -->
-
-
 <main role="main">
   <div class="main-container">
-    <div class="container1">
+    <div class="container">
       <h1>MENTIONS LEGALES</h1>
         <p>www.myikigai.fr</p>
       <hr>
-      <div class="section1">
+      <div class="section">
         <h2>EDITEUR DU SITE</h2>
           <ul>
             <li>Raison sociale : <b>My Ikigaï SASU</b></li>
@@ -90,129 +16,10 @@
             <li>Tel : +33 (0) 6 48 20 23 96</li>
             <li>Horaires d'ouverture : du lundi au vendredi de 9h à 18h</li>
           </ul>
+          <hr>
         <h2>CREATION ET HERBERGEMENT</h2>
           <p>Le studio web My Ikigai a réalisé ce site internet en janvier 2023. Il est hébergé par Heroku.</p>
       </div>
     </div>
   </div>
 </main>
-
-
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-      <!-- Section: Social media -->
-      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-          <span>Suivez-nous sur les réseaux sociaux :</span>
-        </div>
-        <!-- Left -->
-
-        <!-- Right -->
-        <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fa-brands fa-facebook" style="color: #7373ff;"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fa-brands fa-square-instagram" style="color: #7373ff;"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fa-brands fa-linkedin" style="color: #7373ff;"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fa-brands fa-square-github" style="color: #7373ff;"></i>
-          </a>
-        </div>
-        <!-- Right -->
-      </section>
-      <!-- Section: Social media -->
-
-      <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>My Ikigaï Web Studio
-              </h6>
-              <p>
-                J'ai à coeur que chaque entreprise ait le site qui lui ressemble.
-                dolor sit amet, consectetur adipisicing elit.
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Products
-              </h6>
-              <p>
-                <a href="#scrollspyHeading1" class="nav-link">Qui suis-je?</a>
-              </p>
-              <p>
-                <a href="#scrollspyHeading2" class="nav-link">My Iki-quoi?</a>
-              </p>
-              <p>
-                <a href="#scrollspyHeading3" class="nav-link">Mes services</a>
-              </p>
-              <p>
-                <a href="#scrollspyHeading4" class="nav-link">Mes réalisations</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Liens légaux
-              </h6>
-              <p>
-                <a href="#!" class="text-reset">Mentions légales</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Conditions générales de service</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Confidentialité</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Cookies</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="fas fa-home me-3"></i> Tarentaise, Savoie, France</p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                hello@myikigai.fr
-              </p>
-            </div>
-            <!-- Grid column -->
-          </div>
-          <!-- Grid row -->
-        </div>
-      </section>
-      <!-- Section: Links  -->
-
-      <!-- Copyright -->
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2024 Copyright:
-        <a class="text-reset fw-bold">Made with <i class="fa-solid fa-heart fa-beat" style="color: #7373ff;"></i> by My Ikigaï Web Studio</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-    <%= yield %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-  </body>
-</html>

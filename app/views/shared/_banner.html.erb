@@ -1,0 +1,51 @@
+  <!-- Navbar + Header -->
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container-fluid">
+
+          <!-- logo -->
+          <a class="navbar-brand" href="/">
+            <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1706098486/logo_noir_sur_transparent_guxb9u.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top"></a>
+          <!-- fin logo -->
+
+          <!-- bouton et menu responsive -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="nav nav-pills navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#scrollspyHeading1">Qui suis-je?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">My Iki-quoi?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3">Mes services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading4">Mes réalisations</a>
+              </li>
+            </ul>
+          <!-- fin bouton et menu responsive -->
+
+          <!-- call to action -->
+          <a href="#!" class="btn bsb-btn-2xl btn-outline-secondary rounded mb-0 text-nowrap">Contact</a>
+          <!-- fin call to action -->
+          </div>
+        </div>
+      </nav>
+      <!-- fin Navbar -->
+
+      <!-- Header -->
+      <header class="banner">
+        <div class="container">
+          <h1>My Ikigaï</h1>
+          <p>Le studio web créatif et perché</p>
+        </div>
+        <%= render "shared/flashes" %>
+      </header>
+      <!-- fin Header -->
+    </div>
+    <!-- fin Navbar + Header -->
