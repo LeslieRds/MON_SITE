@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
 
     if @contact.valid?  # Supposons que `valid?` vérifie les données de formulaire nécessaires.
       # Logique pour envoyer les données de contact (e.g., via ActionMailer).
-      ContactEmailJob.perform_later(@contact)
+      ContactMailer.contact_email(@contact).deliver_now
       redirect_to root_url, notice: "Votre message a été envoyé avec succès."
     else
       render :new, status: :unprocessable_entity
