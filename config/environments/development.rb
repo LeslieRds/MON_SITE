@@ -18,6 +18,24 @@ Rails.application.configure do
   # Enable server timing
   config.server_timing = true
 
+  # configuration envoi d'un mail
+  config.action_mailer.delivery_method = :letter_opener
+  config.action_mailer.perform_deliveries = true
+
+  # envoi d'un mail avec Gmail
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.gmail.com',
+    port: 587,
+    domain: 'example.com',
+    user_name: '<votre_adresse>@gmail.com',
+    password: '<votre_mot_de_passe>',
+    authentication: 'plain',
+    enable_starttls_auto: true
+  }
+
+
+
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
   if Rails.root.join("tmp/caching-dev.txt").exist?

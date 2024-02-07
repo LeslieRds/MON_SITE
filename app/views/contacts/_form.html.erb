@@ -1,32 +1,51 @@
-  <%= simple_form_for contact || Contact.new do |f| %>
-    <div class="section1">
-      <div class="block">
-      <%= f.label :Prénom %><br>
-      <%= f.text_field :surname, required: true, class: "field contact-form-text-area", placeholder: "James" %><br>
+<!-- Formulaire de contact -->
+<%= simple_form_for contact || Contact.new do |f| %>
+  <div class="section1 text-center">
 
-      <%= f.label :Nom %><br>
-      <%= f.text_field :name, required: true, class: "field contact-form-text-area", placeholder: 'Bond' %><br>
-
-      <%= f.label :Entreprise %><br>
-      <%= f.text_field :name, class: "field contact-form-text-area", placeholder: 'MI6' %><br>
-      </div>
-      <div class="block">
-      <%= f.label :téléphone %><br>
-      <%= f.text_field :number, required: true, class: "field contact-form-text-area", placeholder: '0123456789'%><br>
-
-      <%= f.label :email %><br>
-      <%= f.text_field :email, required: true, class: "field contact-form-text-area", placeholder: 'james@bond.com'%><br>
-      </div>
-      <div class="block">
-      <%= f.label :message %><br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "field contact-form-text-area",
-            placeholder: "Ecrivez ici votre projet"%><br>
-      </div>
-      <div class= "d-none">
-        <%= f.label :nickname %>
-        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+    <!-- Block 1 Nom Prénom et entreprise -->
+    <div class="block">
+      <div class="label">
+        <%= f.label :surname %>
+        <%= f.text_field :surname, required: true, class: "field contact-form-text-area", placeholder: "Votre prénom" %><br>
       </div>
 
-      <%= f.submit 'Envoyé!', class: 'btn bsb-btn-2xl btn-light rounded mb-0 text-nowrap' %>
+      <div class="label">
+        <%= f.label :name %>
+        <%= f.text_field :name, required: true, class: "field contact-form-text-area", placeholder: 'Votre nom' %><br>
+      </div>
+
+      <div class="label">
+        <%= f.label :company %>
+        <%= f.text_field :company, class: "field contact-form-text-area", placeholder: 'Votre entreprise' %><br>
+      </div>
     </div>
-  <% end %>
+    <!-- Block 2 Téléphone et email -->
+    <div class="block">
+      <div class="label">
+        <%= f.label :number %>
+        <%= f.text_field :number, required: true, class: "field contact-form-text-area", placeholder: 'Votre téléphone'%><br>
+      </div>
+      <div class="label">
+        <%= f.label :email %>
+        <%= f.text_field :email, required: true, class: "field contact-form-text-area", placeholder: 'Votre email'%><br>
+      </div>
+    </div>
+
+    <!-- Block 3 Message -->
+    <div class="block">
+      <div class="label">
+        <%= f.label :message %>
+        <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "field contact-form-text-area", placeholder: "Ecrivez ici votre projet"%><br>
+      </div>
+    </div>
+
+    <!-- Block  CAPTCHA -->
+    <div class= "d-none">
+      <%= f.label :nickname %>
+      <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+
+    <!-- bouton d'envoi -->
+    <%= f.submit 'Envoyer!', class: 'btn bsb-btn-2xl btn-light rounded mb-0 text-nowrap' %>
+  </div>
+<% end %>

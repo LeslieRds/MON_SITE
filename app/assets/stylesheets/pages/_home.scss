@@ -59,6 +59,7 @@ main h1 {
   border: black;
   margin: 10px;
   border-radius: 10px;
+  align-items: center;
 }
 
 .main-container .container1 h1{
@@ -67,16 +68,15 @@ main h1 {
 
 .main-container .container1 .section1{
   display: flex;
-  justify-content: space-evenly;
-
+  justify-content: center;
 }
 
 .main-container .container1 .section1 img{
-  height: 15vw;
-  width: 15vw;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   box-shadow: 7px 7px black;
-  border: black;
+  border: solid black;
   margin-right: 50px;
   margin-top: 100px;
 }
