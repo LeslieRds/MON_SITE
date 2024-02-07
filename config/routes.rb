@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
 
   resources :blogs
+
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
+
 end

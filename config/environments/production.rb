@@ -4,6 +4,9 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: "https://monsite-leslierds-e2435330d20b.herokuapp.com/" }
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # settings Sidekiq
+  config.active_job.queue_adapter = :sidekiq
+
   #settings action_mailer
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
