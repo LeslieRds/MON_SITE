@@ -234,6 +234,7 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     rexml (3.2.6)
+    ruby_http_client (3.5.5)
     rubyzip (2.3.2)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -248,6 +249,8 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sendgrid-ruby (6.7.0)
+      ruby_http_client (~> 3.4)
     sidekiq (7.2.1)
       concurrent-ruby (< 2)
       connection_pool (>= 2.3.0)
@@ -309,6 +312,7 @@ DEPENDENCIES
   rails (~> 7.0.8)
   sassc-rails
   selenium-webdriver
+  sendgrid-ruby
   sidekiq
   simple_form!
   sprockets-rails
