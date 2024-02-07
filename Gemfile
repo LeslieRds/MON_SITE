@@ -24,6 +24,9 @@ gem "turbo-rails"
 # installation de la gem Cloudinary
 gem "cloudinary"
 
+#installation gem Mail Form
+gem 'mail_form'
+
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
