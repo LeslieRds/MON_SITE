@@ -13,7 +13,9 @@ Rails.application.configure do
     user_name:            'apikey', # C'est littéralement le mot 'apikey', pas une placeholder
     password:             ENV['SENDGRID_API_KEY'],
     domain:               'myikigai.fr',
-    enable_starttls_auto: true
+    enable_starttls_auto: true,
+    open_timeout:         30, # Secondes
+    read_timeout:          30, # Secondes
   }
 
 
