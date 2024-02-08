@@ -54,7 +54,6 @@ main h1 {
 .main-container .container{
   box-shadow: 7px 7px black;
   border: black;
-  margin: 50px;
   border-radius: 10px;
   align-items: center;
     h1{
@@ -82,10 +81,6 @@ main h1 {
       padding: 20px;
       border-radius: 10px;
     }
-    .btn{ // pour le bouton call to action de prise de contact . Non codé sur cette branche
-      margin-top: 20px;
-      position: center;
-    }
 }
 
 // CSS section 1
@@ -101,6 +96,9 @@ main h1 {
 // CSS section 3
 .main-container #Offres{
   background-color: #38dce8;
+    .carousel{
+      padding: 20px;
+    }
     .carousel-inner{
       border: solid black;
       border-radius: 10px;
