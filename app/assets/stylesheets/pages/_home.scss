@@ -51,172 +51,64 @@ main h1 {
   background-color: #F8F9FA;
 }
 
-// CSS section 1
-.main-container .container1{
-  background-color: #7373ff;
-  padding: 100px;
+.main-container .container{
   box-shadow: 7px 7px black;
   border: black;
-  margin: 10px;
+  margin: 50px;
   border-radius: 10px;
   align-items: center;
-}
-
-.main-container .container1 h1{
-  text-align: center;
-}
-
-.main-container .container1 .section1{
-  display: flex;
-  justify-content: center;
-}
-
-.main-container .container1 .section1 img{
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  box-shadow: 7px 7px black;
-  border: solid black;
-  margin-right: 50px;
-  margin-top: 100px;
-}
-
-.main-container .container1 .section1 p{
-  margin-top: 20px;
-  width: fit-content;
-  text-align: justify;
-  background-color: #F8F9FA;
-  border: solid black;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.main-container .container1 .btn{
-  margin-top: 20px;
-  position: center;
-}
-
-// CSS section 2
-.main-container .container2{
-  background-color: #ff6bd5;
-  padding: 100px;
-  box-shadow: 7px 7px black;
-  border: black;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.main-container .container2 h1{
-  text-align: center;
-}
-
-.main-container .container2 .section1{
-  display: flex;
-  justify-content: space-evenly;
-
-}
-
-.main-container .container2 .section1 img{
-  height: 15vw;
-  width: 15vw;
-  border-radius: 50%;
-  box-shadow: 7px 7px black;
-  border: black;
-  margin-left: 50px;
-  margin-top: 100px;
-}
-
-.main-container .container2 .section1 p{
-  margin-top: 20px;
-  width: fit-content;
-  text-align: justify;
-  background-color: #F8F9FA;
-  border: solid black;
-  padding: 20px;
-  border-radius: 10px;
-  }
-
-.main-container .container2 .btn{
-  border: black;
-  margin-top: 20px;
-  position: center;
-}
-
-// CSS section 3
-.main-container .container3{
-  background-color: #38dce8;
-  padding: 100px;
-  box-shadow: 7px 7px black;
-  border: black;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.main-container .container3 h1{
-  text-align: center;
-}
-
-.main-container .container3 #carouselExampleCaptions{
-  border-radius: 10px;
-  box-shadow: 7px 7px black;
-    & h5{
-      color: black;
+    h1{
+      text-align: center;
+    }
+    .section1{ // Pour contenu image + paragraphe
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .avatar{ // pour toute image seule d'illustration
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      box-shadow: 7px 7px black;
+      border: solid black;
+    }
+    .text{  // pour le texte seul (paragraphe)
+      width: fit-content;
+      text-align: justify;
+      background-color: #F8F9FA;
+      border: solid black;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .btn{ // pour le bouton call to action de prise de contact . Non codé sur cette branche
+      margin-top: 20px;
+      position: center;
     }
 }
 
-.main-container .container3 .btn{
-  margin-top: 20px;
-  position: center;
+// CSS section 1
+.main-container #WhoAmI{
+  background-color: #7373ff;
+}
+
+// CSS section 2
+.main-container #IkiQuoi{
+  background-color: #ff6bd5;
+}
+
+// CSS section 3
+.main-container #Offres{
+  background-color: #38dce8;
+    .carousel-inner{
+      border: solid black;
+      border-radius: 10px;
+      box-shadow: 7px 7px black;
+    }
 }
 
 // CSS section 4
-.main-container .container4{
+.main-container #IknowThings{
   background-color: #b3ff56;
-  padding: 100px;
-  box-shadow: 7px 7px black;
-  border: black;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.main-container .container4 h1{
-  text-align: center;
-}
-
-.main-container .container4 .btn{
-  margin-top: 20px;
-  position: center;
-  border: black;
-}
-
-.btn{
-  border: dashed solid;
-  color: black;
-  box-shadow: 5px 5px black;
-}
-
-// CSS section 5
-.main-container .container5{
-  background-color: #be56ff;
-  padding: 100px;
-  box-shadow: 7px 7px black;
-  border: black;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.main-container .container5 h1{
-  text-align: center;
-}
-
-.main-container .container5 .btn{
-  margin-top: 20px;
-  position: center;
-  border: black;
-}
-
-.btn{
-  border: dashed solid;
-  color: black;
-  box-shadow: 5px 5px black;
 }
