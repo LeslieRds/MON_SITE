@@ -8,11 +8,14 @@ body{
 
 // CSS fot the navbar
 nav {
-background-color: #F4F4F4;
-}
-
-.nav-item {
-  color:#000000;
+  background-color: #F4F4F4;
+    .nav-item {
+      color:#000000;
+        &:hover{
+          background-color: #7373ff;
+          border-radius: 5px;
+        }
+    }
 }
 
 // CSS for the scrollspy
