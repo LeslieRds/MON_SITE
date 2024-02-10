@@ -4,39 +4,50 @@
 
 <!-- section - My Iki-quoi? -->
     <div class="container" id="IkiQuoi">
-      <h1>My Iki-quoi?</h1>
     <div class="section1">
       <div class="text">
-        <p>Bienvenue chez <b>My Ikigaï</b>, le studio web créatif et perché où chaque projet prend son envol depuis les sommets inspirants des Alpes. Ma devise capte l'essence de ce je suis: associer ma passion pour la créativité au développement de l'image de votre entreprise en ligne.</p>
-            <br><br>
-        <h2>Pourquoi ce nom?</h2>
-            <br>
-        <p>L'<b>Ikigaï</b> est un mot japonais qui signifie "raison d'être". J'aime dire qu'il est le point d'équilibre de la conjonction des sphères : ce que vous aimez, ce pour quoi vous êtes doué, ce dont le monde a besoin et ce qui peut vous faire vivre. C'est un concept qui m'inspire et qui guide ma démarche professionnelle. Mon studio web, <b>My Ikigaï</b>, est le fruit de ma passion pour le web et ma volonté de créer des espaces numériques qui se distinguent. Laissez-moi vous accompagner dans la réalisation de votre vision, avec l'engagement et la précision que seul mon studio "créatif et perché" peut vous offrir.</p>
-            <br><br>
-        <h2>Pourquoi "Créatif et perché"?</h2>
-            <br>
-        <ul>
-        <li><b>La créativité au coeur</b>: Elle est le fil conducteur qui guide mes choix et mes décisions. Je fourmille d'idées à chaque instant</li>
+        <!-- boutons de navigation -->
+        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="Ikiwhat-tab" data-bs-toggle="tab" data-bs-target="#Ikiwhat" type="button" role="tab" aria-controls="Ikiwhat" aria-selected="true">My Iki-quoi?</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="why-tab" data-bs-toggle="tab" data-bs-target="#why" type="button" role="tab" aria-controls="why" aria-selected="false">Pourquoi ce nom?</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="creative-tab" data-bs-toggle="tab" data-bs-target="#creative" type="button" role="tab" aria-controls="creative" aria-selected="false">"Créatif et perché"?</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="RoR-tab" data-bs-toggle="tab" data-bs-target="#RoR" type="button" role="tab" aria-controls="RoR" aria-selected="false">Ruby on Rails</button>
+          </li>
+        </ul>
+        <!-- fin boutons de navigation -->
+        <!-- zone de texte -->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="Ikiwhat" role="tabpanel" aria-labelledby="Ikiwhat-tab"><p>Bienvenue chez <b>My Ikigaï</b>, le studio web créatif et perché où chaque projet prend son envol depuis les sommets inspirants des Alpes. Ma devise capte l'essence de ce je suis: associer ma passion pour la créativité au développement de l'image de votre entreprise en ligne.</p></div>
+          <div class="tab-pane fade" id="why" role="tabpanel" aria-labelledby="why-tab"><p>L'<b>Ikigaï</b> est un mot japonais qui signifie "raison d'être". J'aime dire qu'il est le point d'équilibre de la conjonction des sphères : ce que vous aimez, ce pour quoi vous êtes doué, ce dont le monde a besoin et ce qui peut vous faire vivre. C'est un concept qui m'inspire et qui guide ma démarche professionnelle. Mon studio web, <b>My Ikigaï</b>, est le fruit de ma passion pour le web et ma volonté de créer des espaces numériques qui se distinguent. Laissez-moi vous accompagner dans la réalisation de votre vision, avec l'engagement et la précision que seul mon studio "créatif et perché" peut vous offrir.</p></div>
+          <div class="tab-pane fade" id="creative" role="tabpanel" aria-labelledby="creative-tab"><ul>
+            <li><b>La créativité au coeur</b>: Elle est le fil conducteur qui guide mes choix et mes décisions. Je fourmille d'idées à chaque instant</li>
               <br>
-        <li><b>Une perspective élevée</b>: Être situé dans les Alpes en Tarentaise n'est pas anodin ; cela infuse mon travail d'une tranquillité et d'une beauté qui transcendent le quotidien. Cette altitude me permet d'offrir une vision fraîche et élevée sur chaque projet, enrichissant ma créativité avec des perspectives uniques.</li>
-        </ul>
-            <br><br>
-        <h2>Mon outil de développement de prédilection : Ruby on Rails</h2>
-            <br>
-        <p>Dans ce paysage digital en perpétuel changement, il est essentiel de choisir les outils les plus adaptés. <b>Ruby on Rails</b> est mon choix pour plusieurs raisons essentielles :</p>
-        <ul>
-        <li><b>Efficacité incomparable</b> : Ruby on Rails me permet de développer rapidement et efficacement, grâce à sa philosophie "Convention over Configuration" qui élimine le superflu. Cela signifie que vos projets prennent vie plus vite, sans jamais sacrifier la qualité.</li>
-        <li><b>Adaptabilité</b> : La flexibilité offerte par Ruby on Rails s'aligne parfaitement sur ma promesse de créativité. Cet outil me donne la liberté de personnaliser intégralement votre site web, tout en s'appuyant sur une base robuste et sécurisée.</li>
-        <li><b>Une communauté dynamique</b> : La force de Ruby on Rails réside aussi dans sa communauté active et soutenante. Avoir accès à un tel réservoir de connaissances et de ressources me garantit de rester à l'avant-garde des dernières tendances et innovations.</li>
-        <li><b>Pertinence et durabilité</b> : À une époque où rapidité et flexibilité sont primordiales, Ruby on Rails se distingue comme l'outil idéal pour développer des applications web complexes. Il me permet de répondre aux exigences évolutives du marché, en offrant des solutions web durables et évolutives.</li>
-        </ul>
+            <li><b>Une perspective élevée</b>: Être situé dans les Alpes en Tarentaise n'est pas anodin ; cela infuse mon travail d'une tranquillité et d'une beauté qui transcendent le quotidien. Cette altitude me permet d'offrir une vision fraîche et élevée sur chaque projet, enrichissant ma créativité avec des perspectives uniques.</li>
+          </ul></div>
+          <div class="tab-pane fade" id="RoR" role="tabpanel" aria-labelledby="RoR-tab"><h3>Mon outil de développement de prédilection!</h3>
+            <p>Dans ce paysage digital en perpétuel changement, il est essentiel de choisir les outils les plus adaptés. <b>Ruby on Rails</b> est mon choix pour plusieurs raisons essentielles :</p>
+            <ul>
+            <li><b>Efficacité incomparable</b> : Ruby on Rails me permet de développer rapidement et efficacement, grâce à sa philosophie "Convention over Configuration" qui élimine le superflu. Cela signifie que vos projets prennent vie plus vite, sans jamais sacrifier la qualité.</li>
+            <li><b>Adaptabilité</b> : La flexibilité offerte par Ruby on Rails s'aligne parfaitement sur ma promesse de créativité. Cet outil me donne la liberté de personnaliser intégralement votre site web, tout en s'appuyant sur une base robuste et sécurisée.</li>
+            <li><b>Une communauté dynamique</b> : La force de Ruby on Rails réside aussi dans sa communauté active et soutenante. Avoir accès à un tel réservoir de connaissances et de ressources me garantit de rester à l'avant-garde des dernières tendances et innovations.</li>
+            <li><b>Pertinence et durabilité</b> : À une époque où rapidité et flexibilité sont primordiales, Ruby on Rails se distingue comme l'outil idéal pour développer des applications web complexes. Il me permet de répondre aux exigences évolutives du marché, en offrant des solutions web durables et évolutives.</li></div>
+        </div>
+        <!-- fin zone de texte -->
+      <!-- logo -->
       </div>
         <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1706098486/logo_version_noir_et_blanc_jmwzls.jpg" class="avatar">
       </div>
     </div>
 <!-- fin section - My Iki-quoi? -->
 
-      <!-- section - Mes services -->
+<!-- section - Mes services -->
       <div class="container" id="Offres">
         <h1>Mes services</h1>
         <!-- intro de la section -->
@@ -44,11 +55,11 @@
           <div class="text">
             <h3>Là où votre vision rencontre mon expertise.<br> Prêt à vous démarquer? <br>Ensemble, créons le site qui vous ressemble et vous rend unique.</h3>
           </div>
-<!-- fin intro de la section -->
+        <!-- fin intro de la section -->
 
-<!-- cartes de mes services -->
+        <!-- cartes de mes services -->
           <div id="cards">
-<!-- Carte Mon engagement -->
+        <!-- Carte Mon engagement -->
             <div class="card" style="--clr: #009688">
               <div class="img-box">
                 <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707488901/lee-campbell-DtDlVpy-vvQ-unsplash_mjqobl.jpg" alt="...">
@@ -58,9 +69,9 @@
                 <p>Chez <b>My Ikigaï</b>, je suis dédiée à transformer votre vision en une réalité numérique vivante. Consciente que votre site doit être le miroir fidèle de votre marque, je m'engage à développer des solutions web entièrement personnalisées et uniques, qui Vous ressemblent.<br><br><b>Chaque pixel, chaque ligne de code est pensée pour refléter votre identité</b></p>
               </div>
             </div>
-<!-- fin carte Mon engagement -->
+        <!-- fin carte Mon engagement -->
 
-<!-- carte accessibilité -->
+        <!-- carte accessibilité -->
             <div class="card" style="--clr: #FF3E7F">
               <div class="img-box">
                 <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707491634/kenny-eliason-LUgHXvLe_kM-unsplash_ovls5e.jpg"  alt="...">
@@ -99,56 +110,7 @@
           <!-- fin cartes de mes services -->
         </div>
       </div>
-
-
-
-        <!-- div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707488901/lee-campbell-DtDlVpy-vvQ-unsplash_mjqobl.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Mon engagement : Votre identité Numérique Sur-Mesure</h5>
-                <p>Chez <b>My Ikigaï</b>, je suis dédiée à transformer votre vision en une réalité numérique vivante. Consciente que votre site doit être le miroir fidèle de votre marque, je m'engage à développer des solutions web entièrement personnalisées et uniques, qui Vous ressemblent.<br><br><b>Chaque pixel, chaque ligne de code est pensée pour refléter votre identité</b></p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707489290/ben-kolde-bs2Ba7t69mM-unsplash_kiib7d.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>L'Art de l'Accessibilité : Adaptable et Inclusif</h5>
-                <p>Adoptant une vision <em>"Mobile First"</em>, ej m'assure que votre site offre une expérience utilisateur optimale sur tous les appareils, mettant votre marque à portée de main de chaque visiteur.<br><br>Mon engagement va au-delà, en veillant à ce que votre site soit accessible à tous, y compris aux personnes en situation de handicap, car je crois en <b>un Internet ouvert et accessible à tous.</b></p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707489100/john-schnobrich-2FPjlAyMQTA-unsplash_otijag.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Une expérience client inégalée, du Premier clic à la mise en ligne</h5>
-                <p>Votre parcours à mes côtés est foné sur une écoute attentice et un suivi personnalisé. Je vous accompagne à chaque étape, offrant des conseils pertinents et une communication transparente.<br><br> Mon objectif est de rendre le processus de création de votre site aussi fluide et agréable que possible, en bâtissant une <b>relation de confiance</b> et de collaboration étroite.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707489100/ian-schneider-TamMbr4okv4-unsplash_ielgdd.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Votre esthétique, Mon Savoir-Faire</h5>
-                <p>L'esthétique de votre marque et de votre site parle avant tout de vous. De la conception de votre logo, à la définitiaon de votre charte graphique jusqu'à la mise en ligne de votre site, je travaille en étroite collaboration avec vous pour capturer l'essence de votre marque et la traduire en une expérience visuelle captivante. <br><br><b>Ensemble, donnons vie à un design qui vous représente et surtout vous distingue.</b></p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-      </div -->
-      <!-- fin section - Mes services -->
+<!-- fin de la section mes services -->
 
       <!-- section - Qui suis-je? -->
       <div class="container" id="WhoAmI">

@@ -99,8 +99,19 @@ main #IkiQuoi{
   p{
     text-indent: 2rem;
   }
-  h2{
+  h3{
     text-align: center;
+  }
+  button{
+    background-color: #ff6bd5;
+    color: white;
+    border-radius: 18px;
+      &:hover{
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+      }
+  }
+  .tab-content{
+    padding-top: 30px;
   }
 }
 
