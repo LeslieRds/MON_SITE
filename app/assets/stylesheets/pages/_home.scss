@@ -53,39 +53,39 @@ main{
   justify-content: center;
   background-color: #F8F9FA;
   width: 100%;
-}
-
-main .container{
-  width: fit-content;
-  background-size: cover;
-  align-items: center;
-    h1{
-      text-align: center;
-    }
-    .section1{ // Pour contenu image + paragraphe
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .avatar{ // pour toute image seule d'illustration
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      box-shadow: 7px 7px black;
-      border: solid black;
-    }
-    .text{  // pour le texte seul (paragraphe)
-      width: fit-content;
-      text-align: justify;
-      background-color: #F8F9FA;
-      border: solid black;
-      padding: 50px;
-      border-radius: 18px;
-      margin-top: 10px;
-    }
-
+  .container{
+    width: 100%;
+    background-size: cover;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+      h1{
+        text-align: center;
+      }
+      .section1{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .avatar{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        box-shadow: 7px 7px black;
+        border: solid black;
+      }
+      .text{
+        width: fit-content;
+        text-align: justify;
+        background-color: #F8F9FA;
+        border: solid black;
+        padding: 50px;
+        border-radius: 18px;
+        margin-top: 10px;
+        text-indent: 25px;
+      }
+  }
 }
 
 // CSS section Qui suis-je?
@@ -102,12 +102,27 @@ main #IkiQuoi{
   h3{
     text-align: center;
   }
+  .nav{
+    width: 100%;
+  }
   button{
     background-color: #ff6bd5;
     color: white;
     border-radius: 18px;
+    border: none;
       &:hover{
-        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+        background-color: rgb(44, 28, 217);
+        border-radius: 18px;
+        scale: 1.1;
+      }
+      &:after{
+        content: '';
+        background: #ff6bd5;
+        width: 0;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        transition: all 0.5s linear;
       }
   }
   .tab-content{
@@ -202,7 +217,7 @@ main #Offres{
         width: 185px;
         border-radius: 10px;
     }
-    .container .card .card-text p {
+    .container .card .card-text .text p {
         font-size: 0.8rem;
     }
 }
@@ -210,4 +225,36 @@ main #Offres{
 // CSS section portfolio
 main #IknowThings{
   background-color: #b3ff56;
+}
+
+
+// CSS section scroller langages/outils infin
+#tools{
+  width: 100%;
+  background-size: cover;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.slider{
+  margin: 0 200px 0 200px;
+  height: 250px;
+  display:flex;
+  align-items: center;
+  .slide{
+    height: 200px;
+  }
+  .slider-track{
+    height: 250px;
+    white-space: nowrap;
+    animation: Scroll 5s linear infinite;
+  }
+  @keyframes Scroll {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
 }
