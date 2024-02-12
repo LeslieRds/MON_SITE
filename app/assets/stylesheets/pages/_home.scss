@@ -1,8 +1,12 @@
 // CSS for the main content / background
+html {
+  height: -webkit-fill-available; /* We have to fix html height */
+}
+
 body{
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   width: 100%;
-  position: relative;
   background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
   background-position: fixed;
 }
@@ -10,9 +14,9 @@ body{
 // CSS fot the navbar
 nav .nav-link{
       color:#ffffff;
-        &:hover{
-          text-decoration: overline wavy #7373ff;
-        }
+//        &:hover{
+  //        text-decoration: overline wavy #7373ff;
+   //     }
 }
 
 nav .navbar-toggler {
@@ -30,7 +34,6 @@ main h1 {
 
 // CSS for the banner
 .banner {
-  background-size: cover;
   background-position: center;
   padding: 70px 0 15px 25px;
 }
@@ -46,6 +49,7 @@ main h1 {
   font-size: 50px;
   color:rgb(255, 255, 255);
 }
+
 
 
 // CSS des sections
