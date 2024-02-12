@@ -1,3 +1,12 @@
+@media (max-width: 768px) {
+  /* Styles pour les écrans jusqu'à 768px de largeur */
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Styles pour les écrans entre 769px et 1024px de largeur */
+}
+
+
+
 // CSS for the main content / background
 html {
   height: -webkit-fill-available; /* We have to fix html height */
@@ -13,41 +22,56 @@ body{
 }
 
 // CSS fot the navbar
-nav .nav-link{
-      color:#ffffff;
-//        &:hover{
-  //        text-decoration: overline wavy #7373ff;
-   //     }
+nav {
+    height: 6.3vh;
+}
+nav .nav-link {
+  color:black;
+  border-radius: 0;
+    &:hover{
+      border-radius: 0;
+      background: #ad3e9e;
+      box-shadow: 0.8vh 0.8vh black;
+      scale: 1.1;
+      transition: 0.5s; }
 }
 
+
 nav .navbar-toggler {
-  color: white;
+  border-radius: 0;
+  background-color: #F8F9FA;
+  width: fit-content;
+}
+
+nav #navbarToggler{
+  text-align: right;
+  padding-right: 1.25vh;
 }
 
 nav span{
-  color: white;
+  color: black;
 }
 
 // CSS for the scrollspy
 main h1 {
-  scroll-margin-top: 150px;
+  scroll-margin-top: 18.8vh;
 }
 
 // CSS for the banner
 .banner {
   background-position: center;
-  padding: 70px 0 15px 25px;
+  padding: 8.8vh 0 1.89vh 3.13vh;
 }
 
 .banner h1 {
   color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 150px;
+  text-shadow: 0.12vh 0.12vh 0.37vh rgba(0,0,0,0.2);
+  font-size: 18.8vh;
   font-weight: bold;
 }
 
 .banner p {
-  font-size: 50px;
+  font-size: 6.26vh;
   color:rgb(255, 255, 255);
 }
 
@@ -62,7 +86,7 @@ main{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 25px; }
+    padding: 3.13vh; }
   .section1{
     display: flex;
     justify-content: center;
@@ -72,57 +96,14 @@ main{
     width: 100%;
     background-color: #ffffff;
     border: solid black;
-    box-shadow: 7px 7px black;
-    padding: 25px;
+    box-shadow: 0.88vh 0.88vh black;
+    padding: 3.13vh;
       h1{
-        font-size: 50px;
+        font-size: 6.26vh;
         font-weight: bold;
       }
     }
 }
-
-// CSS des sections
-// MAIN{
-//   BACKGROUND-COLOR: TRANSPARENT;
-//   DISPLAY: FLEX;
-//   BACKGROUND-SIZE: COVER;
-//   ALIGN-ITEMS: CENTER;
-//   JUSTIFY-CONTENT: CENTER;
-//   WIDTH: 100%;
-//   .CONTAINER{
-//     WIDTH: 100%;
-//     BACKGROUND-SIZE: COVER;
-//     ALIGN-ITEMS: CENTER;
-//     FLEX-DIRECTION: ROW;
-//     FLEX-WRAP: WRAP;
-//       H1{
-//         TEXT-ALIGN: CENTER;
-//       }
-//       .SECTION1{
-//         DISPLAY: FLEX;
-//         JUSTIFY-CONTENT: CENTER;
-//         FLEX-DIRECTION: ROW;
-//         FLEX-WRAP: WRAP;
-//       }
-//       .AVATAR{
-//         HEIGHT: 200PX;
-//         WIDTH: 200PX;
-//         BORDER-RADIUS: 50%;
-//         BOX-SHADOW: 7PX 7PX BLACK;
-//         BORDER: SOLID BLACK;
-//       }
-//       .TEXT{
-//         WIDTH: FIT-CONTENT;
-//         TEXT-ALIGN: JUSTIFY;
-//         BACKGROUND-COLOR: #F8F9FA;
-//         BORDER: SOLID BLACK;
-//         PADDING: 50PX;
-//         BORDER-RADIUS: 18PX;
-//         MARGIN-TOP: 10PX;
-//         TEXT-INDENT: 25PX;
-//       }
-//   }
-// }
 
 // CSS section Qui suis-je?
 #WhoAmI{
@@ -160,8 +141,9 @@ main{
     color: white;
     border: none;
     border-radius: 0;
+    transition: 0.5s;
       &:hover{
-        box-shadow: 7px 7px black;
+        box-shadow: 0.88vh 0.88vh black;
         scale: 1.1; }
       &:after{
         content: '';
@@ -173,7 +155,7 @@ main{
         transition: all 0.5s linear;  }
   }
   .tab-content{
-    padding-top: 10px;  }
+    padding-top: 1.25vh;  }
 }
 
 // CSS section Offres
@@ -196,38 +178,38 @@ main{
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 100px 50px;
-      padding: 50px 50px;
+      gap: 12.53vh 6.26vh;
+      padding: 6.26vh 6.26vh;
   }
     .card{
       position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 450px;
+      width: 56.39vh;
       max-width: 100%;
-      height: 350px;
+      height: 43.86vh;
       background: white;
       transition: 0.5s;
       border: solid black;
       border-radius: 0;
         &:hover{
-          height: 500px;
-          box-shadow: 7px 7px black;
+          height: 62.66vh;
+          box-shadow: 0.8vh 0.8vh black;
 
         }
     }
     .img-box{
       position: absolute;
       text-align: center;
-      top: 0px;
-      width: 450px;
-      height: 280px;
+      top: 0vh;
+      width: 56.29vh;
+      height: 35.1vh;
       overflow: hidden;
       transition: 0.5s;
     }
     .card:hover .img-box {
-      top: -100px;
+      top: -12.53vh;
       scale: 0.75;
     }
     .card .img-box img {
@@ -242,15 +224,15 @@ main{
       position: absolute;
       bottom: 10px;
       width: 100%;
-      height: 45px;
+      height: 5.63vh;
       text-align: center;
       overflow: hidden;
       transition: 0.5s;
       background-color: #ffffff80;
-      padding: 0px 25px 5px 25px;
+      padding: 0 3.13vh 0.62vh 3.13vh;
     }
     .card:hover .card-text {
-        height: 300px;
+        height: 38.59vh;
     }
     .card .card-text h5 {
         font-size: 1.2rem;
@@ -265,11 +247,9 @@ main{
 @media (max-width: 480px) {
     .container .card {
         width: 230px;
-        border-radius: 15px;
     }
     .container .card .img-box {
         width: 185px;
-        border-radius: 10px;
     }
     .container .card .card-text .text p {
         font-size: 0.8rem;
@@ -296,19 +276,20 @@ main{
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
+  grid-gap: 3.75vh;
   width: 100%;
 }
 
 figure.card {
   position: relative;
-  width: 380px;
-  height: 240px;
+  width: 47.62vh;
+  height: 30.07vh;
   background-image: var(--image-src);
   background-position: 50% 50%;
   background-size: 125%;
-  transition: background 400ms ease;
-  box-shadow: 7px 7px black;
+  transition: 0.5s;;
+  box-shadow: 0.8vh 0.8vh black;
+  border: solid black;
   overflow: hidden;
   border-radius: 0;
   &:hover {

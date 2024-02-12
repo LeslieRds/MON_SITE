@@ -1,39 +1,29 @@
-.main-container{
+main{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F8F9FA;
-}
-
-// CSS section 1
-.main-container .container{
-  background-color: #7373ff;
-  padding: 100px;
-  box-shadow: 7px 7px black;
-  border: black;
-  margin: 10px;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-container .container h1{
-  text-align: center;
-  padding-top: 5px;
-}
-
-.main-container .container .section{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.main-container .container .section section{
-  margin-top: 20px;
-  width: fit-content;
-  text-align: justify;
-  background-color: #F8F9FA;
-  border: solid black;
-  padding: 20px;
-  border-radius: 10px;
+  width: 100%;
+  background-color: none;
+  section{
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px; }
+  .section1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;  }
+  .text{
+    width: 100%;
+    background-color: #ffffff;
+    border: solid black;
+    box-shadow: 7px 7px black;
+    padding: 25px;
+      h1{
+        font-size: 50px;
+        font-weight: bold;
+      }
+    }
 }
