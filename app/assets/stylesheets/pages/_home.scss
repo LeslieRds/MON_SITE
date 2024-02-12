@@ -8,7 +8,8 @@ body{
   min-height: -webkit-fill-available;
   width: 100%;
   background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
-  background-position: fixed;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 // CSS fot the navbar
@@ -50,7 +51,35 @@ main h1 {
   color:rgb(255, 255, 255);
 }
 
-
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: none;
+  section{
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px; }
+  .section1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;  }
+  .text{
+    width: 100%;
+    background-color: #ffffff;
+    border: solid black;
+    box-shadow: 7px 7px black;
+    padding: 25px;
+      h1{
+        font-size: 50px;
+        font-weight: bold;
+      }
+    }
+}
 
 // CSS des sections
 // MAIN{
@@ -96,52 +125,70 @@ main h1 {
 // }
 
 // CSS section Qui suis-je?
-main #WhoAmI{
-  background-color: #7373ff;
+#WhoAmI{
+  background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/a_180/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
+  background-size: cover;
+  h1{
+    color:#ad3e9e;
+    text-align: right;
+  }
+  b{
+    color:#ad3e9e;
+  }
+  p{
+    font-size: 1.2rem;
+  }
 }
 
 // CSS section Ikiquoi?
-main #IkiQuoi{
-  background-color: #ff6bd5;
+#IkiQuoi{
+  background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/a_180/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
+  background-size: cover;
+  b{
+    color:#ad3e9e;
+  }
   p{
     text-indent: 2rem;
+    font-size: 1.2rem;
   }
   h3{
-    text-align: center;
-  }
+    text-align: center; }
   .nav{
-    width: 100%;
-  }
+    width: 100%;  }
   button{
-    background-color: #ff6bd5;
+    background-color: #ad3e9e;
     color: white;
-    border-radius: 18px;
     border: none;
+    border-radius: 0;
       &:hover{
-        background-color: rgb(44, 28, 217);
-        border-radius: 18px;
-        scale: 1.1;
-      }
+        box-shadow: 7px 7px black;
+        scale: 1.1; }
       &:after{
         content: '';
-        background: #ff6bd5;
+        background: #ad3e9e;
         width: 0;
         height: 100%;
         position: absolute;
         inset: 0;
-        transition: all 0.5s linear;
-      }
+        transition: all 0.5s linear;  }
   }
   .tab-content{
-    padding-top: 30px;
-  }
+    padding-top: 10px;  }
 }
 
 // CSS section Offres
-main #Offres{
-  background-color: #38dce8;
+#Offres{
+  background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
+  background-size: cover;
+  h1{
+    color:#ad3e9e;
+  }
+  b{
+    color:#ad3e9e;
+  }
     h3{
-      text-align: center;
+      font-family: "Londrina Solid", "sans-serif";
+      text-align: right;
     }
     #cards {
       position: relative;
@@ -163,9 +210,11 @@ main #Offres{
       background: white;
       transition: 0.5s;
       border: solid black;
-      border-radius: 18px;
+      border-radius: 0;
         &:hover{
           height: 500px;
+          box-shadow: 7px 7px black;
+
         }
     }
     .img-box{
@@ -174,15 +223,12 @@ main #Offres{
       top: 0px;
       width: 450px;
       height: 280px;
-      background: #000000;
-      border-radius: 12px;
       overflow: hidden;
       transition: 0.5s;
     }
     .card:hover .img-box {
       top: -100px;
       scale: 0.75;
-      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
     }
     .card .img-box img {
       position: absolute;
@@ -201,7 +247,6 @@ main #Offres{
       overflow: hidden;
       transition: 0.5s;
       background-color: #ffffff80;
-      border-radius: 15px;
       padding: 0px 25px 5px 25px;
     }
     .card:hover .card-text {
@@ -209,10 +254,12 @@ main #Offres{
     }
     .card .card-text h5 {
         font-size: 1.2rem;
-        color: var(--clr);
+        color: #ad3e9e;
+        font-family: "Londrina Solid", "sans-serif";
+        font-weight: bold;
     }
     .card .card-text p {
-        color: #020202;
+        color: black;
     }
 }
 @media (max-width: 480px) {
@@ -230,8 +277,12 @@ main #Offres{
 }
 
 // CSS section portfolio
-main #IknowThings{
-  background-color: #b3ff56;
+#IknowThings{
+  background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
+  background-size: cover;
+  h1{
+    color: #ad3e9e;
+  }
 }
 *,
 *::before,
@@ -257,8 +308,9 @@ figure.card {
   background-position: 50% 50%;
   background-size: 125%;
   transition: background 400ms ease;
-  box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.03), 0 22.3px 17.9px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+  box-shadow: 7px 7px black;
   overflow: hidden;
+  border-radius: 0;
   &:hover {
     figcaption {
       transform: translateY(0px);
@@ -274,51 +326,12 @@ figure.card {
       transform: translateY(80px);
     }
   }
-  &--2 {
-    background-size: 110%;
-    &:hover {
-      background-position: 50% -100%;
-    }
-    figcaption {
-      top: 0;
-      transform: translateY(-80px);
-    }
-  }
-  &--3 {
-    background-size: 115%;
-    &:hover {
-      background-position: -100% 50%;
-    }
-    figcaption {
-      left: 0;
-      transform: translateX(-180px);
-    }
-  }
-  &--4 {
-    &:hover {
-      background-position: 100% 50%;
-    }
-    figcaption {
-      right: 0;
-      transform: translateX(180px);
-    }
-  }
 
-  &--1,
-  &--2 {
+  &--1 {
     figcaption {
       width: 100%;
       height: 80px;
       padding: 15px 20px;
-    }
-  }
-  &--3,
-  &--4 {
-    figcaption {
-      flex-direction: column;
-      width: 180px;
-      height: 100%;
-      padding: 20px 15px;
     }
   }
 
@@ -331,14 +344,15 @@ figure.card {
     transition: transform 400ms ease;
     .info {
       color: rgb(226, 226, 226);
-      font-family: "Montserrat";
+      font-family: "Londrina Solid", "sans-serif";
       h3 {
+        font-family: "Londrina Solid", "sans-serif";
         font-size: 1.2rem;
         letter-spacing: 1px;
         margin-bottom: 2px;
       }
       span {
-        color: #72cc60;
+        color: #ad3e9e;
         font-size: 0.85rem;
       }
     }
@@ -354,7 +368,7 @@ figure.card {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #fff;
+        color: #ad3e9e;
         margin-left: 10px;
         font-size: 1.2rem;
         opacity: 0.65;
@@ -379,7 +393,7 @@ figure.card {
           height: 100%;
           border-radius: 50%;
           opacity: 0;
-          background: rgba(255, 255, 255, 0.05);
+          background: rgba(173, 62, 158, 0.05);
           transform: scale(0.5);
           z-index: -1;
           transition: all 150ms ease;
