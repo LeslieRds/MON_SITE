@@ -3,18 +3,24 @@ body{
   min-height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #F8F9FA;
+  background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
+  background-position: fixed;
 }
 
 // CSS fot the navbar
-nav {
-  background-color: #F4F4F4;
-    .nav-item {
-      color:#000000;
+nav .nav-link{
+      color:#ffffff;
         &:hover{
           text-decoration: overline wavy #7373ff;
         }
-    }
+}
+
+nav .navbar-toggler {
+  color: white;
+}
+
+nav span{
+  color: white;
 }
 
 // CSS for the scrollspy
@@ -26,13 +32,11 @@ main h1 {
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 125px 0 25px 0;
-  text-align: center;
-  background-color: #F8F9FA;
+  padding: 70px 0 15px 25px;
 }
 
 .banner h1 {
-  color: black;
+  color: rgb(255, 255, 255);
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 150px;
   font-weight: bold;
@@ -40,53 +44,52 @@ main h1 {
 
 .banner p {
   font-size: 50px;
-  color:black;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  color:rgb(255, 255, 255);
 }
 
+
 // CSS des sections
-main{
-  display: flex;
-  background-size: cover;
-  align-items: center;
-  justify-content: center;
-  background-color: #F8F9FA;
-  width: 100%;
-  .container{
-    width: 100%;
-    background-size: cover;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-      h1{
-        text-align: center;
-      }
-      .section1{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      .avatar{
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        box-shadow: 7px 7px black;
-        border: solid black;
-      }
-      .text{
-        width: fit-content;
-        text-align: justify;
-        background-color: #F8F9FA;
-        border: solid black;
-        padding: 50px;
-        border-radius: 18px;
-        margin-top: 10px;
-        text-indent: 25px;
-      }
-  }
-}
+// MAIN{
+//   BACKGROUND-COLOR: TRANSPARENT;
+//   DISPLAY: FLEX;
+//   BACKGROUND-SIZE: COVER;
+//   ALIGN-ITEMS: CENTER;
+//   JUSTIFY-CONTENT: CENTER;
+//   WIDTH: 100%;
+//   .CONTAINER{
+//     WIDTH: 100%;
+//     BACKGROUND-SIZE: COVER;
+//     ALIGN-ITEMS: CENTER;
+//     FLEX-DIRECTION: ROW;
+//     FLEX-WRAP: WRAP;
+//       H1{
+//         TEXT-ALIGN: CENTER;
+//       }
+//       .SECTION1{
+//         DISPLAY: FLEX;
+//         JUSTIFY-CONTENT: CENTER;
+//         FLEX-DIRECTION: ROW;
+//         FLEX-WRAP: WRAP;
+//       }
+//       .AVATAR{
+//         HEIGHT: 200PX;
+//         WIDTH: 200PX;
+//         BORDER-RADIUS: 50%;
+//         BOX-SHADOW: 7PX 7PX BLACK;
+//         BORDER: SOLID BLACK;
+//       }
+//       .TEXT{
+//         WIDTH: FIT-CONTENT;
+//         TEXT-ALIGN: JUSTIFY;
+//         BACKGROUND-COLOR: #F8F9FA;
+//         BORDER: SOLID BLACK;
+//         PADDING: 50PX;
+//         BORDER-RADIUS: 18PX;
+//         MARGIN-TOP: 10PX;
+//         TEXT-INDENT: 25PX;
+//       }
+//   }
+// }
 
 // CSS section Qui suis-je?
 main #WhoAmI{
