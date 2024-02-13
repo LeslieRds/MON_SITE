@@ -55,14 +55,6 @@ nav span{
   }
 }
 
-// CSS for the scrollspy
-main h1 {
-  scroll-margin-top: 18.8vh;
-}
-
-.container {
-  margin: 0 !important;
-}
 // CSS for the banner
 .banner {
   background-position: center;
@@ -81,23 +73,44 @@ main h1 {
   color:rgb(255, 255, 255);
 }
 
+// CSS for the scrollspy
+main h1 {
+  scroll-margin-top: 18.8vh;
+}
+
+// CSS body
 main{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   background-color: none;
+  .container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   section{
     width: 100%;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 3.13vh; }
+    padding: 3.13vh;
+  }
   .section1{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;  }
+    flex-wrap: wrap;
+  }
+  h1{
+    font-size: 6.26vh;
+    font-weight: bold;
+    color:#ad3e9e;
+  }
+  b{
+    color:#ad3e9e;
+  }
   .text{
     width: 100%;
     background-color: #ffffff;
@@ -108,7 +121,12 @@ main{
       h1{
         font-size: 6.26vh;
         font-weight: bold;
+        color:#ad3e9e;
       }
+      b{
+        color:#ad3e9e;
+      }
+
     }
 }
 
@@ -172,107 +190,122 @@ main{
 #Offres{
   background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
   background-size: cover;
-  h1{
-    color:#ad3e9e;
-  }
-  b{
-    color:#ad3e9e;
-  }
     h3{
-      font-family: "Londrina Solid", "sans-serif";
       text-align: right;
+      font-family: "Bricolage Grotesque", "sans-serif";
     }
-    #cards {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12.53vh 6.26vh;
-      padding: 6.26vh 6.26vh;
+  .section1{
+    padding: 25px 25px 0px 25px;
+    background-color: #ffffff;
+    border: solid black;
+    box-shadow: 7px 7px black;
   }
-    .card{
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 56.39vh;
-      max-width: 100%;
-      height: 43.86vh;
-      background: white;
-      transition: 0.5s;
-      border: solid black;
-      border-radius: 0;
-        &:hover{
-          height: 62.66vh;
-          box-shadow: 0.8vh 0.8vh black;
+  .section1 .content .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+  }
 
-        }
-    }
-    .img-box{
+  .container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    transition: 0.5s;
+    box-shadow: 7px 7px black;
+    border-radius: 0;
+  }
+
+  .container .card:hover {
+      height: 350px;
+  }
+
+  .container .card .img-box {
       position: absolute;
-      text-align: center;
-      top: 0vh;
-      width: 56.29vh;
-      height: 35.1vh;
+      top: 20px;
+      left: 20px;
+      width: 300px;
+      height: 220px;
+      background: #333;
       overflow: hidden;
       transition: 0.5s;
-    }
-    .card:hover .img-box {
-      top: -12.53vh;
+  }
+
+  .container .card:hover .img-box {
+      top: -100px;
       scale: 0.75;
-    }
-    .card .img-box img {
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  }
+
+  .container .card .img-box img {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
-    }
-    .card .card-text {
+  }
+
+  .container .card .text-content {
       position: absolute;
-      bottom: 10px;
+      top: 252px;
       width: 100%;
-      height: 5.63vh;
+      height: 35px;
+      padding: 0 20px;
       text-align: center;
       overflow: hidden;
       transition: 0.5s;
-      background-color: #ffffff80;
-      padding: 0 3.13vh 0.62vh 3.13vh;
-    }
-    .card:hover .card-text {
-        height: 38.59vh;
-    }
-    .card .card-text h5 {
-        font-size: 1.2rem;
-        color: #ad3e9e;
-        font-family: "Londrina Solid", "sans-serif";
-        font-weight: bold;
-    }
-    .card .card-text p {
-        color: black;
-    }
-}
-@media (max-width: 480px) {
-    .card {
-        width: 28.82vh;
-        height: fit-content;
-    }
-    .card .img-box {
-        width: 23.18vh;
-    }
-    .card .img-box img {
-        width: 28.82vh;
-    }
-    .card .card-text {
-        height: fit-content;
-    }
-    .card .card-text .text p {
-        font-size: 0.8rem;
-    }
-}
+  }
 
+  .container .card:hover .text-content {
+      top: 130px;
+      height: 250px;
+  }
+
+  .container .card .text-content h5 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #ad3e9e;
+      font-family: "Bricolage Grotesque", "sans-serif";
+      text-align: right;
+  }
+
+  .container .card .text-content p {
+      color: #333;
+      font-size: 0.85rem;
+      text-align: left;
+  }
+
+  @media (max-width: 480px) {
+      .container .card {
+          width: 230px;
+      }
+
+      .container .card:hover .text-content{
+        height: 420px;
+    }
+
+    .container .card:hover {
+      height: 420px;
+  }
+
+      .container .card .img-box {
+          width: 185px;
+      }
+
+      .container .card .text-content p {
+          font-size: 0.8rem;
+      }
+  }
+}
 // CSS section portfolio
 #IknowThings{
   background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
@@ -401,17 +434,17 @@ figure.card {
   }
 }
 
-@media only screen and (max-width: 900px) {
-  body {
-    align-items: start;
+  @media only screen and (max-width: 900px) {
+    body {
+      align-items: start;
+    }
+    .container {
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: 1fr;
+      grid-gap: 40px;
+      padding: 80px 0;
+    }
   }
-  .container {
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 1fr;
-    grid-gap: 40px;
-    padding: 80px 0;
-  }
-}
 
 .support{
   position: fixed;
