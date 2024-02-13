@@ -26,6 +26,22 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script>document.addEventListener('DOMContentLoaded', function() {
+      var logo = document.querySelector('.navbar-brand img'); // Sélectionne l'image du logo
+      var hauteurDisparition = 100; // Définissez la hauteur de défilement à laquelle le logo doit disparaître
+
+      function verifierPositionScroll() {
+        if (window.scrollY > hauteurDisparition) {
+          logo.style.opacity = '0'; // Rend le logo invisible
+          logo.style.transition = 'opacity 0.5s'; // Ajoute une transition pour lisser la disparition
+        } else {
+          logo.style.opacity = '1'; // Rend le logo à nouveau visible
+        }
+      }
+      // Écouter pour le défilement de la fenêtre
+      window.addEventListener('scroll', verifierPositionScroll);
+    });</script>
+
     <%= render 'shared/banner' %>
       <p class="alert"><%= alert %></p>
       <p class="notice"><%= notice %></p>

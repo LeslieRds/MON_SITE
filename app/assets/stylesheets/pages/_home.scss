@@ -50,8 +50,31 @@ nav span{
 }
 
 @media (max-width: 768px){
-  nav{
-    width: 100%;
+  .navbar-collapse {
+    display: none;
+  }
+  .navbar, .navbar-collapse.bg-body-tertiary {
+    background-color: transparent !important; /* Supprime la couleur de fond */
+  }
+  .navbar {
+    justify-content: center !important; /* Centre les éléments de la navbar, y compris le logo */
+    display: flex !important;
+    align-items: center !important;
+  }
+  .container-fluid {
+    text-align: center; /* Centre le contenu du conteneur, si nécessaire */
+    width: 100%; /* Assure que le conteneur prend toute la largeur */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .navbar-brand {
+    display: flex !important; /* Utilise flex pour permettre le centrage du logo */
+    justify-content: center !important;
+    width: 100%; /* Assure que le lien prend toute la largeur pour centrer le logo */
+  }
+  nav img{
+    width: 25vh;
+    height: 25vh;
   }
 }
 
