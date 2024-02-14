@@ -14,7 +14,8 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;  }
+    flex-wrap: wrap;
+    text-align: center;  }
   .text{
     width: 100%;
     background-color: #ffffff;
@@ -28,5 +29,37 @@ main{
     }
   h2{
     font-family: 'Bricolage Grotesque', sans-serif;
+  }
+  .accordion{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0; /*supression des coin arrondis */
+    border: solid black;
+    box-shadow: 7px 7px black;
+  }
+  .accordion-item {
+    width: 100%; /* Assure que chaque item prend toute la largeur disponible */
+    border-radius: 0; /*supression des coin arrondis */
+  }
+  .accordion-header .accordion-button {
+    border-radius: 0 !important; /*supression des coin arrondis */
+    background-color: #c726df; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    transition: background-color 0.3s ease; /* Animation de fond */
+  }
+
+  .accordion-header .accordion-button.collapsed {
+    background-color: #3424a9; /* Couleur de fond quand l'item est fermé */
+    border-radius: 0; /*supression des coin arrondis */
+
+  }
+  .accordion-body{
+    text-align: justify;
+    h3{
+      font-family: 'Bricolage Grotesque', sans-serif;
+      color:#c726df;
+      text-indent: 2rem;
+      padding-top: 1rem;
+    }
   }
 }

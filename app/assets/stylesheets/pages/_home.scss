@@ -186,7 +186,9 @@ main{
     font-size: 2.5rem;
     font-weight: bold;  }
   .nav{
-    width: 100%;  }
+    width: 100%;
+    display: space-between;
+  }
   button{
     background-color: #ad3e9e;
     color: white;
@@ -213,6 +215,9 @@ main{
 #Offres{
   background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
   background-size: cover;
+    h1{
+      text-align: left;
+    }
     h3{
       text-align: right;
       font-family: "Bricolage Grotesque", "sans-serif";

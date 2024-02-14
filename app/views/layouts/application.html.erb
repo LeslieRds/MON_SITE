@@ -21,26 +21,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@800;900&family=Londrina+Shadow&family=Londrina+Solid:wght@100;300&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+
   </head>
 
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>document.addEventListener('DOMContentLoaded', function() {
-      var logo = document.querySelector('.navbar-brand img'); // Sélectionne l'image du logo
-      var hauteurDisparition = 100; // Définissez la hauteur de défilement à laquelle le logo doit disparaître
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var logo = document.querySelector('.navbar-brand img');
+    var hauteurDisparition = 100;
 
-      function verifierPositionScroll() {
-        if (window.scrollY > hauteurDisparition) {
-          logo.style.opacity = '0'; // Rend le logo invisible
-          logo.style.transition = 'opacity 0.5s'; // Ajoute une transition pour lisser la disparition
-        } else {
-          logo.style.opacity = '1'; // Rend le logo à nouveau visible
-        }
+    function verifierPositionScroll() {
+      if (window.scrollY > hauteurDisparition) {
+        logo.style.opacity = '0';
+        logo.style.transition = 'opacity 0.5s';
+      } else {
+        logo.style.opacity = '1';
       }
-      // Écouter pour le défilement de la fenêtre
-      window.addEventListener('scroll', verifierPositionScroll);
-    });</script>
+    }
+
+    window.addEventListener('scroll', verifierPositionScroll);
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+
+    accordionButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        setTimeout(() => {
+          const buttonTop = button.getBoundingClientRect().top;
+          const buttonHeight = button.offsetHeight;
+          const windowHeight = window.innerHeight;
+
+          const scrollY = window.scrollY + buttonTop - ((windowHeight / 2) - (buttonHeight / 2));
+
+          window.scroll({
+            top: scrollY,
+            behavior: 'smooth'
+          });
+        }, 300);
+      });
+    });
+  });
+</script>
+
 
     <%= render 'shared/banner' %>
       <p class="alert"><%= alert %></p>
@@ -53,5 +79,7 @@
     <%= render 'shared/footer' %>
 
     </footer>
+      <!-- fichier JavaScript externe ici -->
+    <script src="app/javascript/controllers/script.js"></script>
   </body>
 </html>
