@@ -14,16 +14,23 @@ body{
 
 // CSS fot the navbar
 nav {
-      height: 8vh;
-    }
-    nav img{
-      width: 5vh;
-      height: 5vh;
-      margin-right: 1.25vh;
-    }
-nav a:hover{
-  color:#ad3e9e;
+  height: 8vh;
 }
+nav img{
+  width: 5vh;
+  height: 5vh;
+  margin-right: 1.25vh;
+}
+nav .nav-link {
+  color:black;
+  border-radius: 0;
+    &:hover{
+      border-radius: 0;
+      text-decoration: underline #ad3e9e;
+      scale: 1.1;
+      transition: 0.5s; }
+}
+
 
 nav .navbar-toggler {
   border-radius: 0;
@@ -147,8 +154,6 @@ main{
 
 // CSS section Qui suis-je?
 #WhoAmI{
-  background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/a_180/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
-  background-size: cover;
   h1{
     color:#ad3e9e;
     text-align: right;
@@ -163,8 +168,6 @@ main{
 
 // CSS section Ikiquoi?
 #IkiQuoi{
-  background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/a_180/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
-  background-size: cover;
   b{
     color:#ad3e9e;
   }
@@ -179,34 +182,46 @@ main{
     font-weight: bold;  }
   .nav{
     width: 100%;
-    margin: 10px !important;
   }
+  .nav-item{
+    margin-right: 10px;
+  }
+  .nav-item:last-child{
+    margin-right: 0;
+  }
+  button[aria-selected="true"]{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: outset #ad3e9e !important;
+    border-radius: 0;
+    transition: 0.5s;
+  }
+
   button{
-    background-color: #ad3e9e;
-    color: white;
-    border: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     border-radius: 0;
     transition: 0.5s;
       &:hover{
         box-shadow: 0.88vh 0.88vh black;
-        scale: 1.1; }
+        scale: 1.1;
+        background-color: #ad3e9e;
+      }
       &:after{
         content: '';
-        background: #ad3e9e;
         width: 0;
         height: 100%;
         position: absolute;
         inset: 0;
         transition: all 0.5s linear;  }
+
   }
   .tab-content{
     padding-top: 1.25vh;  }
 }
 
-// CSS section expertise
+// CSS section Offres
 #Expertise{
-  background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
-  background-size: cover;
     h1{
       text-align: left;
     }
@@ -328,8 +343,6 @@ main{
 }
 // CSS section portfolio
 #IknowThings{
-  background-image: url("https://res.cloudinary.com/ddt8brfwz/image/upload/v1707731497/luke-chesser-eICUFSeirc0-unsplash_tpq51g.jpg");
-  background-size: cover;
   h1{
     color: #ad3e9e;
   }
@@ -486,36 +499,55 @@ figure.card {
 }
 // CSS section scroller langages/outils infin
 #tools{
-  width: 100%;
-  background-size: cover;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.slider{
-  margin: 0 200px 0 200px;
-  height: 250px;
-  display:flex;
-  align-items: center;
-  .slide{
-    height: 200px;
-  }
-  .slider-track{
-    height: 250px;
-    white-space: nowrap;
-    animation: Scroll 5s linear infinite;
-  }
-  @keyframes Scroll {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
-}
 
+  @keyframes slide {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
 
+    .slider {
+      overflow: hidden;
+      padding: 60px 0;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .slider:before,
+    .slider:after {
+      position: absolute;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      content: "";
+      z-index: 2;
+    }
+
+    .slider:before {
+      left: 0;
+    }
+
+    .slider:after {
+      right: 0;
+    }
+
+    .slider:hover .slider-track {
+      animation-play-state: paused;
+    }
+
+    .slider-track {
+      display: inline-block;
+      animation: 35s slide infinite linear;
+    }
+
+    .slider-track img {
+      height: 50px;
+      margin: 0 40px;
+    }
+}
 
 // Media queries
 @media (max-width: 768px) {
@@ -561,4 +593,30 @@ figure.card {
   .container{
     width: 100%;
   }
+}
+
+// CSS contact
+
+
+#contact button{
+  background-color: #ad3e9e;
+  font-weight: bold;;
+  border-radius: 0;
+  transition: 0.5s;
+    &:hover{
+      box-shadow: 0.88vh 0.88vh black;
+      scale: 1.1;
+      background-color: #ad3e9e;
+    }
+    &:after{
+      content: '';
+      width: 0;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+      transition: all 0.5s linear;  }
+}
+
+footer h6{
+  font-family: 'Bricolage Grotesque', 'sans-serif';
 }
