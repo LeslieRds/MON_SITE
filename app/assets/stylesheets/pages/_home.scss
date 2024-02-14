@@ -35,7 +35,7 @@ nav .nav-link {
 
 nav .button{
   margin-left: auto !important;
-  background-color: #ad3e9e72;
+  background: linear-gradient(90deg, rgba(52,36,169,0.5410758053221288) 0%, rgba(199,38,223,0.5410758053221288) 100%);
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -44,7 +44,8 @@ nav .button{
     &:hover{
       box-shadow: 0.88vh 0.88vh black;
       scale: 1.1;
-      background-color: #ad3e9e;
+      background: linear-gradient(90deg, rgba(52,36,169,1) 0%, rgba(199,38,223,1) 100%);
+      color: white;
     }
     &:after{
       content: '';
@@ -213,7 +214,8 @@ main{
       &:hover{
         box-shadow: 0.88vh 0.88vh black;
         scale: 1.1;
-        background-color: #ad3e9e;
+        background: linear-gradient(90deg, rgba(52,36,169,1) 0%, rgba(199,38,223,1) 100%);
+        color: white;
       }
       &:after{
         content: '';
@@ -607,14 +609,16 @@ figure.card {
 
 
 #Contact button{
-  background-color: #ad3e9e;
+  background: linear-gradient(90deg, rgba(52,36,169,0.5410758053221288) 0%, rgba(199,38,223,0.5410758053221288) 100%);
+  color: black !important;
   font-weight: bold;;
   border-radius: 0;
   transition: 0.5s;
     &:hover{
       box-shadow: 0.88vh 0.88vh black;
       scale: 1.1;
-      background-color: #ad3e9e;
+      background:linear-gradient(90deg, rgba(52,36,169,1) 0%, rgba(199,38,223,1) 100%);
+      color: white;
     }
     &:after{
       content: '';
