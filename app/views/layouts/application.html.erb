@@ -29,6 +29,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
+// Javascript pour navbar - sur petit écran, le logo disparait quand on scrolle
   document.addEventListener('DOMContentLoaded', function() {
     var logo = document.querySelector('.navbar-brand img');
     var hauteurDisparition = 100;
@@ -44,7 +45,9 @@
 
     window.addEventListener('scroll', verifierPositionScroll);
   });
-
+</script>
+<script>
+// Javascript pour les pages statiques - recentre les boutons pour lecture
   document.addEventListener("DOMContentLoaded", function() {
     const accordionButtons = document.querySelectorAll('.accordion-button');
 
