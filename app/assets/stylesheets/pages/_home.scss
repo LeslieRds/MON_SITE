@@ -232,18 +232,20 @@ main{
 
 // CSS section Offres
 #Expertise{
-    h1{
-      text-align: left;
-    }
-    h3{
-      text-align: right;
-      font-family: "Bricolage Grotesque", "sans-serif";
-    }
+
+
   .section1{
     padding: 25px 25px 0px 25px;
     background-color: #ffffff;
     border: solid black;
     box-shadow: 7px 7px black;
+      h1{
+        margin-right: auto !important;
+      }
+      h4{
+        text-align: right !important;
+        font-family: "Bricolage Grotesque", "sans-serif" !important;
+      }
   }
   .section1 .content .container {
     position: relative;
@@ -252,7 +254,7 @@ main{
     align-items: center;
     flex-wrap: wrap;
     gap: 100px 50px;
-    padding: 100px 50px;
+    padding: 50px 50px;
   }
 
   .container .card {
