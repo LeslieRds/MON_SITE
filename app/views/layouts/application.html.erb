@@ -79,6 +79,15 @@
     window.addEventListener('scroll', verifierPositionScroll);
   });
 </script>
+
+<script>
+function toggleLanguage() {
+  window.location.href = '<%= switch_language_path %>';
+}
+</script>
+
+<button onclick="toggleLanguage()">Toggle Lang</button>
+
 <script>
 // Javascript pour les pages statiques - recentre les boutons pour lecture
   document.addEventListener("DOMContentLoaded", function() {
