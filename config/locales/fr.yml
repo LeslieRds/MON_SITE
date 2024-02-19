@@ -1,14 +1,44 @@
 fr:
+#section: My Iki-quoi
+  #tabulations
   my_iki_quoi: "My Iki-quoi?"
+  welcome_message_html: "Bienvenue chez <b>My Ikigaï</b>, le studio web créatif et perché où chaque projet prend son envol depuis les sommets inspirants des Alpes. Ma devise capte l'essence de ce je suis: associer ma passion pour la créativité au développement de l'image de votre entreprise en ligne."
   why_name: "Pourquoi ce nom?"
+  ikigai_meaning_html: "L'<b>Ikigaï</b> est un mot japonais qui signifie 'raison d'être'. J'aime dire qu'il est le point d'équilibre de la conjonction des sphères : ce que vous aimez, ce pour quoi vous êtes doué, ce dont le monde a besoin et ce qui peut vous faire vivre. C'est un concept qui m'inspire et qui guide ma démarche professionnelle. Mon studio web, <b>My Ikigaï</b>, est le fruit de ma passion pour le web et ma volonté de créer des espaces numériques qui se distinguent. Laissez-moi vous accompagner dans la réalisation de votre vision, avec l'engagement et la précision que seul mon studio 'créatif et perché' peut vous offrir."
   creative_high: "Créatif et perché"
-  welcome_message: "Bienvenue chez <b>My Ikigaï</b>, le studio web créatif et perché où chaque projet prend son envol depuis les sommets inspirants des Alpes. Ma devise capte l'essence de ce je suis: associer ma passion pour la créativité au développement de l'image de votre entreprise en ligne."
-  ikigai_meaning: "L'<b>Ikigaï</b> est un mot japonais qui signifie 'raison d'être'. J'aime dire qu'il est le point d'équilibre de la conjonction des sphères : ce que vous aimez, ce pour quoi vous êtes doué, ce dont le monde a besoin et ce qui peut vous faire vivre. C'est un concept qui m'inspire et qui guide ma démarche professionnelle. Mon studio web, <b>My Ikigaï</b>, est le fruit de ma passion pour le web et ma volonté de créer des espaces numériques qui se distinguent. Laissez-moi vous accompagner dans la réalisation de votre vision, avec l'engagement et la précision que seul mon studio 'créatif et perché' peut vous offrir."
-  creative_tab1: "<b>La créativité au coeur</b>: Elle est le fil conducteur qui guide mes choix et mes décisions. Je fourmille d'idées à chaque instant"
-  creative_tab2: "<b>Une perspective élevée</b>: Être situé dans les Alpes en Tarentaise n'est pas anodin ; cela infuse mon travail d'une tranquillité et d'une beauté qui transcendent le quotidien. Cette altitude me permet d'offrir une vision fraîche et élevée sur chaque projet, enrichissant ma créativité avec des perspectives uniques."
+  creative_tab_html: "<li><b>La créativité au coeur</b>: Elle est le fil conducteur qui guide mes choix et mes décisions. Je fourmille d'idées à chaque instant</li><br><li><b>Une perspective élevée</b>: Être situé dans les Alpes en Tarentaise n'est pas anodin ; cela infuse mon travail d'une tranquillité et d'une beauté qui transcendent le quotidien. Cette altitude me permet d'offrir une vision fraîche et élevée sur chaque projet, enrichissant ma créativité avec des perspectives uniques.</li>"
   ror: "Mon outil de développement de prédilection!"
-  ror_text1: "Dans ce paysage digital en perpétuel changement, il est essentiel de choisir les outils les plus adaptés. <b>Ruby on Rails</b> est mon choix pour plusieurs raisons essentielles"
-  ror_text2: "<b>Efficacité incomparable</b> : Ruby on Rails me permet de développer rapidement et efficacement, grâce à sa philosophie 'Convention over Configuration' qui élimine le superflu. Cela signifie que vos projets prennent vie plus vite, sans jamais sacrifier la qualité."
-  ror_text3: "<b>Adaptabilité</b> : La flexibilité offerte par Ruby on Rails s'aligne parfaitement sur ma promesse de créativité. Cet outil me donne la liberté de personnaliser intégralement votre site web, tout en s'appuyant sur une base robuste et sécurisée."
-  ror_text4: "<b>Une communauté dynamique</b> : La force de Ruby on Rails réside aussi dans sa communauté active et soutenante. Avoir accès à un tel réservoir de connaissances et de ressources me garantit de rester à l'avant-garde des dernières tendances et innovations."
-  ror_text5: "<b>Pertinence et durabilité</b> : À une époque où rapidité et flexibilité sont primordiales, Ruby on Rails se distingue comme l'outil idéal pour développer des applications web complexes. Il me permet de répondre aux exigences évolutives du marché, en offrant des solutions web durables et évolutives."
+  ror_text_html: "<p>Dans ce paysage digital en perpétuel changement, il est essentiel de choisir les outils les plus adaptés. <b>Ruby on Rails</b> est mon choix pour plusieurs raisons essentielles:</p><ul><li><b>Efficacité incomparable</b> : Ruby on Rails me permet de développer rapidement et efficacement, grâce à sa philosophie 'Convention over Configuration' qui élimine le superflu. Cela signifie que vos projets prennent vie plus vite, sans jamais sacrifier la qualité.</li><li><b>Adaptabilité</b> : La flexibilité offerte par Ruby on Rails s'aligne parfaitement sur ma promesse de créativité. Cet outil me donne la liberté de personnaliser intégralement votre site web, tout en s'appuyant sur une base robuste et sécurisée.</li><li><b>Une communauté dynamique</b> : La force de Ruby on Rails réside aussi dans sa communauté active et soutenante. Avoir accès à un tel réservoir de connaissances et de ressources me garantit de rester à l'avant-garde des dernières tendances et innovations.</li><li><b>Pertinence et durabilité</b> : À une époque où rapidité et flexibilité sont primordiales, Ruby on Rails se distingue comme l'outil idéal pour développer des applications web complexes. Il me permet de répondre aux exigences évolutives du marché, en offrant des solutions web durables et évolutives.</li></ul>"
+
+#section Mon expertise
+  expertise_html: "<h1>Mon expertise</h1><h4>Prêt à vous démarquer? <b>Ensemble,</b> créons le site qui vous ressemble et vous rend unique.</h4>"
+  commitment_hmlt: "<h5>Mon engagement : <br>Votre identité Numérique Sur-Mesure</h5><p>Consciente que votre site doit être le miroir fidèle de votre marque, je m'engage à développer des solutions web entièrement personnalisées et uniques, qui <b>Vous</b> ressemblent.<br><b>Chaque pixel, chaque ligne de code est pensée pour refléter votre identité</b></p>"
+  accessible_html: "<h5>L'Art de l'Accessibilité :<br> Adaptable et Inclusif</h5><p>Adoptant une vision <em>"Mobile First"</em>, je m'assure que votre site offre une expérience utilisateur optimale sur tous les appareils.<br>Mon engagement va au-delà, en veillant à ce que votre site soit accessible à tous, car je crois en <b>un Internet ouvert, inclusif et accessible à tous.</b></p>"
+  experience_client_html: "<h5>Une expérience client inégalée du Premier clic à la mise en ligne</h5><p>Votre parcours à mes côtés est fondé sur une écoute attentive et un suivi personnalisé, dans une communication transparente.<br>Mon objectif est de rendre le processus de création de votre site aussi fluide que possible, en bâtissant une <b>relation de confiance</b> et de collaboration étroite.</p>"
+  esthetic_html: "<h5>Votre esthétique <br> Mon Savoir-Faire</h5><p>L'esthétique de votre marque parle avant tout de vous. De la conception de votre logo, à la définition de votre charte graphique jusqu'à la mise en ligne de votre site, je travaille à capturer l'essence de votre marque et la traduire en une expérience visuelle captivante. <br><b>Ensemble, donnons vie à un design qui vous représente et surtout vous distingue.</b></p>"
+
+#section qui suis-je
+  who_am_i_html: "<h1>Qui suis-je?</h1>"
+  who_am_i_text_html: "<p>Je suis Leslie, néo-savoyarde, passionnée de technologies et d'informatique depuis mon plus jeune âge. Enfant de la GenY, j'ai grandi avec un ordinateur à portée de main. <b>Geek dans l'âme</b> j'ai trouvé mon équilibre en créant cette entreprise : un lieu où je peux faire ce que j'aime, tout en vous étant utile. <b>Créative</b>, je fourmille toujours d'idées. J'aime accompagner des entrepreneurs dans la création de l'image de leur entreprise.</p><p><b>Développeuse Full-stack</b>, formée au Wagon France, j'ai appris à concevoir des applications web pour tout type de projets. Ainsi, je vous accompagne dans la création de votre site Internet, qu'il s'agisse d'une page simple <em>(landing page)</em> ou d'un site marchand <em>(e-commerce)</em>. Par mon parcours, j'ai aussi la casquette de <b>graphiste</b>. Je peux aussi vous accompagner dans la définition de votre marque, en concevant votre logo, et tous les supports imprimables nécessaires. </p><p> Nous sommes désormais à un clic de travailler ensemble. </p><p> <b class="conclusion">Alors qu'attendez-vous?</b></p>"
+
+  #section what i've done
+  what_i_ve_done_html: "Mes réalisations"
+  ss_text_html: "Réalisation de visuels web et print"
+  bh: "B&H avocats"
+  bh_text_html: "Réalisation du logo et de la charte graphique"
+  fada_text_html: "Réalisation du logo"
+  eugenie_text_html: "Accompagnement et réalisation flyers"
+  airbnbrain_text_html: "Projet d'étude 1 : création d'une marketplace type AriBnB"
+  smw_text_html: "Projet d'étude 2: création d'une application mobile originale"
+  fashionist_text_html: "Projet de certification (temps de réalisation 8h)"
+  invitation_html: "Et si c'était vous?"
+  invitation_text_html: "Nous sommes à un clic de travailler ensemble"
+
+# section contact
+  contact: "Contactez-moi"
+  contact_text: "Envie de travailler ensemble? Parlez moi de votre projet et je vous recontacterai :)"
+  contact_firstname: "Prénom"
+  contact_lastname: "Nom"
+  contact_number: "Numéro"
+  contact_message: "Votre Message"
+  contact_send: "Hop! C'est parti!"

@@ -24,20 +24,13 @@
         <!-- fin boutons de navigation -->
         <!-- zone de texte -->
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="Ikiwhat" role="tabpanel" aria-labelledby="Ikiwhat-tab"><p><%= t('welcome_message') %></div>
-          <div class="tab-pane fade" id="why" role="tabpanel" aria-labelledby="why-tab"><p><%= t('ikigai_meaning') %></p></div>
+          <div class="tab-pane fade show active" id="Ikiwhat" role="tabpanel" aria-labelledby="Ikiwhat-tab"><p><%= t('welcome_message_html') %></div>
+          <div class="tab-pane fade" id="why" role="tabpanel" aria-labelledby="why-tab"><p><%= t('ikigai_meaning_html') %></p></div>
           <div class="tab-pane fade" id="creative" role="tabpanel" aria-labelledby="creative-tab"><ul>
-            <li><%= t('creative_tab1') %></li>
-              <br>
-            <li><%= t('creative_tab2') %></li>
+            <%= t('creative_tab_html') %>
           </ul></div>
           <div class="tab-pane fade" id="RoR" role="tabpanel" aria-labelledby="RoR-tab"><h3><%= t('ror') %></h3>
-            <p><%= t('ror_text1') %>:</p>
-            <ul>
-            <li><%= t('ror_text2') %></li>
-            <li><%= t('ror_text3') %></li>
-            <li><%= t('ror_text4') %></li>
-            <li><%= t('ror_text5') %></li></div>
+            <%= t('ror_text_html') %></div>
         </div>
         <!-- fin zone de texte -->
       </div>
@@ -48,8 +41,7 @@
       <section id="Expertise">
         <!-- intro de la section -->
         <div class="section1">
-            <h1>Mon expertise</h1>
-            <h4>Prêt à vous démarquer? <b>Ensemble,</b> créons le site qui vous ressemble et vous rend unique.</h4>
+            <%= t('expertise_html') %></div>
           <div class="content">
 
         <!-- fin intro de la section -->
@@ -62,8 +54,7 @@
                 <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707488901/lee-campbell-DtDlVpy-vvQ-unsplash_mjqobl.jpg" alt="L'image représente un bureau avec des écrans d'ordinateur, comme si quelqu'un travaillait dessus">
               </div>
               <div class="text-content">
-                <h5>Mon engagement : <br>Votre identité Numérique Sur-Mesure</h5>
-                <p>Consciente que votre site doit être le miroir fidèle de votre marque, je m'engage à développer des solutions web entièrement personnalisées et uniques, qui <b>Vous</b> ressemblent.<br><b>Chaque pixel, chaque ligne de code est pensée pour refléter votre identité</b></p>
+                <%= t('commitment_html') %>
               </div>
             </div>
         <!-- fin carte Mon engagement -->
@@ -73,9 +64,7 @@
               <div class="img-box">
                 <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707491634/kenny-eliason-LUgHXvLe_kM-unsplash_ovls5e.jpg"  alt="=La photo représente une main tenant un smartphone, pour symboliser le fait que je sais développer des sites adaptés aux petits écrans">
               </div>
-              <div class="text-content">
-                <h5>L'Art de l'Accessibilité :<br> Adaptable et Inclusif</h5>
-                <p>Adoptant une vision <em>"Mobile First"</em>, je m'assure que votre site offre une expérience utilisateur optimale sur tous les appareils.<br>Mon engagement va au-delà, en veillant à ce que votre site soit accessible à tous, car je crois en <b>un Internet ouvert, inclusif et accessible à tous.</b></p>
+              <div class="text-content"><%= t('accessible_html') %>
               </div>
             </div>
             <!-- fin carte accessibilité -->
@@ -85,9 +74,7 @@
               <div class="img-box">
                 <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707489100/john-schnobrich-2FPjlAyMQTA-unsplash_otijag.jpg"  alt="La photo est une vue prise du dessus. On voit un ordinateur portable sur une table basse, vers lequel trois personnes pointent le doigt comme si elles travaillaient ensemble.">
               </div>
-              <div class="text-content">
-                <h5>Une expérience client inégalée du Premier clic à la mise en ligne</h5>
-                <p>Votre parcours à mes côtés est fondé sur une écoute attentive et un suivi personnalisé, dans une communication transparente.<br>Mon objectif est de rendre le processus de création de votre site aussi fluide que possible, en bâtissant une <b>relation de confiance</b> et de collaboration étroite.</p>
+              <div class="text-content"><%= t('experience_client_html') %>
               </div>
             </div>
             <!-- fin carte relation client -->
@@ -97,9 +84,7 @@
               <div class="img-box">
                 <img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707489100/ian-schneider-TamMbr4okv4-unsplash_ielgdd.jpg"  alt="La photo est une vue du dessus, nous y voyons le sol où est écrit 'Passion led us here' avec les pieds de deux personnes.">
               </div>
-              <div class="text-content">
-                <h5>Votre esthétique <br> Mon Savoir-Faire</h5>
-                <p>L'esthétique de votre marque parle avant tout de vous. De la conception de votre logo, à la définition de votre charte graphique jusqu'à la mise en ligne de votre site, je travaille à capturer l'essence de votre marque et la traduire en une expérience visuelle captivante. <br><b>Ensemble, donnons vie à un design qui vous représente et surtout vous distingue.</b></p>
+              <div class="text-content"><%= t('esthetic_html') %>
               </div>
             </div>
             <!-- fin carte esthétisme -->
@@ -160,7 +145,6 @@
         <img class="slide" src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707920399/bootstrap_slnmq9.png" alt="logo Bootstrap"/>
         <img class="slide" src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707578258/logo-2582748_640_g1aizd.png"  alt="logo HTML5"/>
         <img class="slide" src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707578223/logo-2582747_1280_ntasjf.png"  alt="logo CSS3"/>
-
       </div>
     </div>
   </section>
@@ -171,9 +155,7 @@
         <div class="section1">
           <!--img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707148379/IMG_3449_copie_e4fvov_c_crop_ar_1_1_t0ljfq.jpg" class="avatar" -->
 
-          <div class="text">
-          <h1>Qui suis-je?</h1>
-          <p>Je suis Leslie, néo-savoyarde, passionnée de technologies et d'informatique depuis mon plus jeune âge. Enfant de la GenY, j'ai grandi avec un ordinateur à portée de main. <b>Geek dans l'âme</b> j'ai trouvé mon équilibre en créant cette entreprise : un lieu où je peux faire ce que j'aime, tout en vous étant utile. <b>Créative</b>, je fourmille toujours d'idées. J'aime accompagner des entrepreneurs dans la création de l'image de leur entreprise.</p><p><b>Développeuse Full-stack</b>, formée au Wagon France, j'ai appris à concevoir des applications web pour tout type de projets. Ainsi, je vous accompagne dans la création de votre site Internet, qu'il s'agisse d'une page simple <em>(landing page)</em> ou d'un site marchand <em>(e-commerce)</em>. Par mon parcours, j'ai aussi la casquette de <b>graphiste</b>. Je peux aussi vous accompagner dans la définition de votre marque, en concevant votre logo, et tous les supports imprimables nécessaires. </p><p> Nous sommes désormais à un clic de travailler ensemble. </p><p> <b class="conclusion">Alors qu'attendez-vous?</b></p>
+          <div class="text"><%= t('who_am_i_html') %><%= t('who_am_i_text_html') %>
           </div>
         </div>
       </section>
@@ -182,13 +164,13 @@
 <!-- section - Mes réalisations -->
       <section id="IknowThings">
         <div class="text">
-        <h1>Mes réalisations</h1>
+        <h1><%= t('what_i_ve_done_html') %></h1>
         <div class="section1">
           <figure class="card card--1" style="--image-src: url(https://res.cloudinary.com/ddt8brfwz/image/upload/v1707589879/Capture-d_E2_80_99e_CC_81cran-2019-11-12-a_CC_80-22.25.30_o1rvaw.png)">
             <figcaption>
               <span class="info">
                 <h3>Le Secret Square</h3>
-                <span>Réalisation d'invitations web et print</span>
+                <span><%= t('ss_text_html') %></span>
               </span>
             </figcaption>
           </figure>
@@ -196,8 +178,8 @@
           <figure class="card card--1" style="--image-src: url('https://res.cloudinary.com/ddt8brfwz/image/upload/v1707590240/Capture_d_e%CC%81cran_2024-02-10_a%CC%80_19.37.05_chkk15.png')">
             <figcaption>
               <span class="info">
-                <h3>B&H avocat</h3>
-                <span>Réalisation du logo et de la charte graphique</span>
+                <h3><%= t('bh') %></h3>
+                <span><%= t('bh_text_html') %></span>
               </span>
             </figcaption>
           </figure>
@@ -206,7 +188,7 @@
             <figcaption>
               <span class="info">
                 <h3>FaDa Social Agency</h3>
-                <span>Réalisation du logo</span>
+                <span><%= t('fada_text_html') %></span>
               </span>
             </figcaption>
           </figure>
@@ -215,7 +197,7 @@
             <figcaption>
               <span class="info">
                 <h3>La voie d'Eugénie</h3>
-                <span>Accompagnement et réalisation flyers</span>
+                <span><%= t('eugenie_text_html') %></span>
               </span>
             </figcaption>
           </figure>
@@ -224,7 +206,7 @@
             <figcaption>
               <span class="info">
                 <h3>AirBnBrain</h3>
-                <span>Projet d'étude 1 : création d'une marketplace type AriBnB</span>
+                <span><%= t('airbnbrain_text_html') %></span>
               </span>
               <span class="links">
                 <a href="https://github.com/LeslieRds/AirbnBrain" target="_blank"><i class="fab fa-github"></i></a>
@@ -236,7 +218,7 @@
             <figcaption>
               <span class="info">
                 <h3>Save My Wallet</h3>
-                <span>Projet d'étude 2: création d'une application mobile originale</span>
+                <span><%= t('smw_text_html') %></span>
               </span>
               <span class="links">
                 <a href="https://github.com/LeslieRds/save_my_wallet" target="_blank"><i class="fab fa-github"></i></a>
@@ -248,7 +230,7 @@
             <figcaption>
               <span class="info">
                 <h3>The Fashionist</h3>
-                <span>Projet de certification (temps de réalisation 8h)</span>
+                <span><%= t('fashionist_text_html') %></span>
               </span>
               <span class="links">
                 <a href="https://github.com/LeslieRds/fashionist-certification" target="_blank"><i class="fab fa-github"></i></a>
@@ -259,8 +241,8 @@
           <figure class="card card--1" style="--image-src: url('https://res.cloudinary.com/ddt8brfwz/image/upload/v1707591371/miles-burke-idhx-MOCDSk-unsplash_vcswt4.jpg')">
             <figcaption>
               <span class="info">
-                <h3>Et si c'était vous?</h3>
-                <span>Nous sommes à un clic de travailler ensemble</span>
+                <h3><%= t('invitation_html') %></h3>
+                <span><%= t('invitation_text_html') %></span>
               </span>
             </figcaption>
           </figure>
@@ -276,11 +258,9 @@
               <div class="max-w-xl mx-auto my-10  p-5">
               <div class="text-center">
                 <h1 class="my-3 ">
-                  Contact
+                  <%= t('contact') %>!
                 </h1>
-                <p class="text-gray-400 dark:text-gray-400">
-                  Envie de travailler ensemble? Parlez moi de votre projet et je vous recontacterai :)
-                </p>
+                <p class="text-gray-400 dark:text-gray-400"><%= t('contact_text') %></p>
               </div>
 
               <div class="m-7">
@@ -291,11 +271,11 @@
                 <div class="inputs">
                   <div class="flex mb-6 space-x-4">
                     <div class="w-full md:w-1/2">
-                      <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Prénom</label>
+                      <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400"><%= t('contact_firstname') %></label>
                       <input type="text" name="name" id="first_name" placeholder="Prince" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
                     </div>
                     <div class="w-full md:w-1/2">
-                      <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Nom</label>
+                      <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400"><%= t('contact_lastname') %></label>
                       <input type="text" name="last_name" id="lname" placeholder="Charmant" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
                     </div>
                   </div>
@@ -308,22 +288,20 @@
                     </div>
 
                     <div class="w-full md:w-1/2">
-                      <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Numéro</label>
+                      <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400"><%= t('contact_number') %></label>
                       <input type="text" name="phone" id="phone" placeholder="0123456789" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
                     </div>
                   </div>
                 </div>
                 <div class="inputs">
                   <div class="mb-6">
-                    <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Votre Message</label>
+                    <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400"><%= t('contact_message') %></label>
 
                     <textarea rows="5" name="message" id="message" placeholder="Présentez moi votre projet." class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
                   </div>
                 </div>
                   <div class="mb-6">
-                    <button type="submit" class="w-full px-3 py-4 text-white">
-                      Hop! C'est parti!
-                    </button>
+                    <button type="submit" class="w-full px-3 py-4 text-white"><%= t('contact_send') %></button>
                   </div>
                   <p class="text-base text-center text-gray-400" id="result"></p>
                 </form>

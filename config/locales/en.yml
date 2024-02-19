@@ -1,14 +1,43 @@
 en:
+#section: My Iki-quoi
   my_iki_quoi: "My Iki-What?"
+  welcome_message_html: "Welcome to <b>My Ikigaï</b>, the creative and high web studio where every project takes flight from the inspiring summits of the Alps. My motto captures the essence of who I am: combining my passion for creativity with developing your business's online image"
   why_name: "Why this name?"
+  ikigai_meaning_html: "<b>Ikigai</b> is a Japanese word meaning 'reason for being.' I like to say it's the balance point of the conjunction of spheres: what you love, what you are good at, what the world needs, and what can sustain you. It's a concept that inspires me and guides my professional approach. My web studio, <b>My Ikigai</b>, is the fruit of my passion for the web and my desire to create distinctive digital spaces. Let me assist you in bringing your vision to life, with the commitment and precision that only my 'creative and high' studio can offer."
   creative_high: "Creative and high"
-  welcome_message: "Welcome to <b>My Ikigaï</b>, the creative and high web studio where every project takes flight from the inspiring summits of the Alps. My motto captures the essence of who I am: combining my passion for creativity with developing your business's online image"
-  ikigai_meaning: "<b>Ikigai</b> is a Japanese word meaning 'reason for being.' I like to say it's the balance point of the conjunction of spheres: what you love, what you are good at, what the world needs, and what can sustain you. It's a concept that inspires me and guides my professional approach. My web studio, <b>My Ikigai</b>, is the fruit of my passion for the web and my desire to create distinctive digital spaces. Let me assist you in bringing your vision to life, with the commitment and precision that only my 'creative and high' studio can offer."
-  creative_tab1: "<b>Creativity at the Heart</b>: It is the guiding thread that influences my choices and decisions. I am brimming with ideas at every moment."
-  creative_tab2: "<b>An Elevated Perspective</b>: Being located in the Tarentaise Alps is no coincidence; it infuses my work with a tranquility and beauty that transcend the everyday. This altitude allows me to offer a fresh and elevated vision on every project, enriching my creativity with unique perspectives."
+  creative_tab_html: "<li><b>Creativity at the Heart</b>: It is the guiding thread that influences my choices and decisions. I am brimming with ideas at every moment.</li><br><li><b>An Elevated Perspective</b>: Being located in the Tarentaise Alps is no coincidence; it infuses my work with a tranquility and beauty that transcend the everyday. This altitude allows me to offer a fresh and elevated vision on every project, enriching my creativity with unique perspectives.</li>"
   ror: "My favorite framework!"
-  ror_text1: "In this constantly changing digital landscape, it's essential to choose the most suitable tools. <b>Ruby on Rails</b> is my choice for several key reasons"
-  ror_text2: "<b>Unmatched Efficiency</b>: Ruby on Rails allows me to develop quickly and efficiently, thanks to its 'Convention over Configuration' philosophy that eliminates the unnecessary. This means your projects come to life faster, without ever sacrificing quality."
-  ror_text3: "<b>Adaptability</b>: The flexibility offered by Ruby on Rails aligns perfectly with my promise of creativity. This tool gives me the freedom to fully customize your website, while relying on a robust and secure foundation."
-  ror_text4: "<b>A Dynamic Community</b>: The strength of Ruby on Rails also lies in its active and supportive community. Having access to such a reservoir of knowledge and resources ensures I stay at the forefront of the latest trends and innovations."
-  ror_text5: "<b>Relevance and Sustainability</b>: In an era where speed and flexibility are paramount, Ruby on Rails stands out as the ideal tool for developing complex web applications. It allows me to meet the evolving demands of the market, offering sustainable and scalable web solutions."
+  ror_text_html: "<p>In this constantly changing digital landscape, it's essential to choose the most suitable tools. <b>Ruby on Rails</b> is my choice for several key reasons:</p><ul><li><b>Unmatched Efficiency</b>: Ruby on Rails allows me to develop quickly and efficiently, thanks to its 'Convention over Configuration' philosophy that eliminates the unnecessary. This means your projects come to life faster, without ever sacrificing quality.</li><li><b>Adaptability</b>: The flexibility offered by Ruby on Rails aligns perfectly with my promise of creativity. This tool gives me the freedom to fully customize your website, while relying on a robust and secure foundation.</li><li><b>A Dynamic Community</b>: The strength of Ruby on Rails also lies in its active and supportive community. Having access to such a reservoir of knowledge and resources ensures I stay at the forefront of the latest trends and innovations.</li><li><b>Relevance and Sustainability</b>: In an era where speed and flexibility are paramount, Ruby on Rails stands out as the ideal tool for developing complex web applications. It allows me to meet the evolving demands of the market, offering sustainable and scalable web solutions.</li></ul>"
+
+#section mon expertise
+  expertise_html: "<h1>My Expertise</h1><h4>Ready to stand out? <b>Together,</b> let's create a website that reflects you and makes you unique.</h4>"
+  commitment_html: "<h5>My Commitment: <br>Your Custom Digital Identity</h5><p>Understanding that your website must be a true mirror of your brand, I commit to developing fully customized and unique web solutions that <b>resemble You</b>.<br><b>Every pixel, every line of code is thought out to reflect your identity</b></p>"
+  accessible_html: "<h5>The Art of Accessibility:<br>Adaptable and Inclusive</h5><p>Adopting a "Mobile First" vision, I ensure your site offers an optimal user experience on all devices.<br>My commitment goes further, ensuring your site is accessible to everyone, because I believe in <b>an open, inclusive, and accessible Internet for all.</b></p>"
+  experience_client_html: "<h5>An Unmatched Client Experience from First Click to Launch</h5><p>Your journey with me is based on attentive listening and personalized follow-up, in transparent communication.<br>My goal is to make the process of creating your site as smooth as possible, by building a <b>trustful relationship</b> and close collaboration.</p>"
+  esthetic_html: "<h5>Your Aesthetics <br> My Expertise</h5><p>The aesthetics of your brand speaks volumes about you. From designing your logo, to defining your visual identity, to launching your website, I work to capture the essence of your brand and translate it into a captivating visual experience. <br><b>Together, let's bring to life a design that represents you and, more importantly, distinguishes you.</b></p>"
+
+#section qui suis-je
+  who_am_i_html: "<h1>Who Am I?</h1>"
+  who_am_i_text_html: "<p>I'm Leslie, a neo-Savoyard, passionate about technology and computing from a young age. A child of GenY, I grew up with a computer within reach. A <b>geek at heart</b>, I found my balance by creating this business: a place where I can do what I love while being useful to you. <b>Creative</b>, I'm always brimming with ideas. I enjoy helping entrepreneurs create their business's image.</p><p>As a <b>Full-stack Developer</b>, trained at Le Wagon France, I learned to design web applications for all types of projects. Thus, I assist you in creating your website, whether it's a simple page <em>(landing page)</em> or an e-commerce site <em>(e-commerce)</em>. Through my journey, I've also taken on the role of a <b>graphic designer</b>. I can help define your brand by designing your logo and all necessary print materials. </p><p>We are now just a click away from working together.</p><p><b class="conclusion">So what are you waiting for?</b></p>"
+
+#section what I've done
+  what_i_ve_done_html: "My achievements"
+  ss_text_html: "Creation of web and print visuals"
+  bh: "B&H lawyers"
+  bh_text_html: "Logo and brand identity design"
+  fada_text_html: "Logo creation"
+  eugenie_text_html: "Support and creation of flyers"
+  airbnbrain_text_html: "Study project 1: creation of an Airbnb-type marketplace"
+  smw_text_html: "Study project 2: creation of an original mobile application"
+  fashionist_text_html: "Certification project (completion time 8h)"
+  invitation_html: "What if it was you?"
+  invitation_text_html: "We are just a click away from working together."
+
+#section contact
+  contact: "Contact me"
+  contact_text: "Interested in working together? Tell me about your project, and I'll get back to you :)"
+  contact_firstname: "Firstname"
+  contact_lastname: "Lastname"
+  contact_number: "Phone number"
+  contact_message: "Toyr Message"
+  contact_send: "Hop! Let"s go!"
