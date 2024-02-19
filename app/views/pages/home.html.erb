@@ -9,13 +9,13 @@
         <!-- boutons de navigation -->
         <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="Ikiwhat-tab" data-bs-toggle="tab" data-bs-target="#Ikiwhat" type="button" role="tab" aria-controls="Ikiwhat" aria-selected="true">My Iki-quoi?</button>
+            <button class="nav-link active" id="Ikiwhat-tab" data-bs-toggle="tab" data-bs-target="#Ikiwhat" type="button" role="tab" aria-controls="Ikiwhat" aria-selected="true"><%= t('my_iki_quoi') %></button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="why-tab" data-bs-toggle="tab" data-bs-target="#why" type="button" role="tab" aria-controls="why" aria-selected="false">Pourquoi ce nom?</button>
+            <button class="nav-link" id="why-tab" data-bs-toggle="tab" data-bs-target="#why" type="button" role="tab" aria-controls="why" aria-selected="false"><%= t('why_name') %></button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="creative-tab" data-bs-toggle="tab" data-bs-target="#creative" type="button" role="tab" aria-controls="creative" aria-selected="false">"Créatif et perché"?</button>
+            <button class="nav-link" id="creative-tab" data-bs-toggle="tab" data-bs-target="#creative" type="button" role="tab" aria-controls="creative" aria-selected="false">"<%= t('creative_high') %>"?</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="RoR-tab" data-bs-toggle="tab" data-bs-target="#RoR" type="button" role="tab" aria-controls="RoR" aria-selected="false">Ruby on Rails</button>
@@ -24,20 +24,20 @@
         <!-- fin boutons de navigation -->
         <!-- zone de texte -->
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="Ikiwhat" role="tabpanel" aria-labelledby="Ikiwhat-tab"><p>Bienvenue chez <b>My Ikigaï</b>, le studio web créatif et perché où chaque projet prend son envol depuis les sommets inspirants des Alpes. Ma devise capte l'essence de ce je suis: associer ma passion pour la créativité au développement de l'image de votre entreprise en ligne.</p></div>
-          <div class="tab-pane fade" id="why" role="tabpanel" aria-labelledby="why-tab"><p>L'<b>Ikigaï</b> est un mot japonais qui signifie "raison d'être". J'aime dire qu'il est le point d'équilibre de la conjonction des sphères : ce que vous aimez, ce pour quoi vous êtes doué, ce dont le monde a besoin et ce qui peut vous faire vivre. C'est un concept qui m'inspire et qui guide ma démarche professionnelle. Mon studio web, <b>My Ikigaï</b>, est le fruit de ma passion pour le web et ma volonté de créer des espaces numériques qui se distinguent. Laissez-moi vous accompagner dans la réalisation de votre vision, avec l'engagement et la précision que seul mon studio "créatif et perché" peut vous offrir.</p></div>
+          <div class="tab-pane fade show active" id="Ikiwhat" role="tabpanel" aria-labelledby="Ikiwhat-tab"><p><%= t('welcome_message') %></div>
+          <div class="tab-pane fade" id="why" role="tabpanel" aria-labelledby="why-tab"><p><%= t('ikigai_meaning') %></p></div>
           <div class="tab-pane fade" id="creative" role="tabpanel" aria-labelledby="creative-tab"><ul>
-            <li><b>La créativité au coeur</b>: Elle est le fil conducteur qui guide mes choix et mes décisions. Je fourmille d'idées à chaque instant</li>
+            <li><%= t('creative_tab1') %></li>
               <br>
-            <li><b>Une perspective élevée</b>: Être situé dans les Alpes en Tarentaise n'est pas anodin ; cela infuse mon travail d'une tranquillité et d'une beauté qui transcendent le quotidien. Cette altitude me permet d'offrir une vision fraîche et élevée sur chaque projet, enrichissant ma créativité avec des perspectives uniques.</li>
+            <li><%= t('creative_tab2') %></li>
           </ul></div>
-          <div class="tab-pane fade" id="RoR" role="tabpanel" aria-labelledby="RoR-tab"><h3>Mon outil de développement de prédilection!</h3>
-            <p>Dans ce paysage digital en perpétuel changement, il est essentiel de choisir les outils les plus adaptés. <b>Ruby on Rails</b> est mon choix pour plusieurs raisons essentielles :</p>
+          <div class="tab-pane fade" id="RoR" role="tabpanel" aria-labelledby="RoR-tab"><h3><%= t('ror') %></h3>
+            <p><%= t('ror_text1') %>:</p>
             <ul>
-            <li><b>Efficacité incomparable</b> : Ruby on Rails me permet de développer rapidement et efficacement, grâce à sa philosophie "Convention over Configuration" qui élimine le superflu. Cela signifie que vos projets prennent vie plus vite, sans jamais sacrifier la qualité.</li>
-            <li><b>Adaptabilité</b> : La flexibilité offerte par Ruby on Rails s'aligne parfaitement sur ma promesse de créativité. Cet outil me donne la liberté de personnaliser intégralement votre site web, tout en s'appuyant sur une base robuste et sécurisée.</li>
-            <li><b>Une communauté dynamique</b> : La force de Ruby on Rails réside aussi dans sa communauté active et soutenante. Avoir accès à un tel réservoir de connaissances et de ressources me garantit de rester à l'avant-garde des dernières tendances et innovations.</li>
-            <li><b>Pertinence et durabilité</b> : À une époque où rapidité et flexibilité sont primordiales, Ruby on Rails se distingue comme l'outil idéal pour développer des applications web complexes. Il me permet de répondre aux exigences évolutives du marché, en offrant des solutions web durables et évolutives.</li></div>
+            <li><%= t('ror_text2') %></li>
+            <li><%= t('ror_text3') %></li>
+            <li><%= t('ror_text4') %></li>
+            <li><%= t('ror_text5') %></li></div>
         </div>
         <!-- fin zone de texte -->
       </div>
