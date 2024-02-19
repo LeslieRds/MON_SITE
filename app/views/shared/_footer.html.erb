@@ -4,7 +4,7 @@
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
     <div class="me-5 d-none d-lg-block">
-      <span>Suivez-moi je suis sympa !</span>
+      <span><%= t('liens') %> !</span>
     </div>
     <!-- Left -->
 
@@ -37,7 +37,7 @@
             My Ikigaï Studio
           </h6>
           <p>
-            My Ikigaï est un studio web spécialisé dans la création de sites et applications.<br><br> Le studio est perché à 1.300m d'altitude en Haute Tarentaise.
+            <%= t('small_description_html') %>
           </p>
         </div>
         <!-- Grid column -->
@@ -49,16 +49,16 @@
             Navigation
           </h6>
           <p>
-            <a href="/#IkiQuoi" class="nav-link">My Iki-quoi?</a>
+            <a href="/#IkiQuoi" class="nav-link"><%= t('my_iki_quoi') %></a>
           </p>
           <p>
-            <a href="/#Expertise" class="nav-link">Mon expertise</a>
+            <a href="/#Expertise" class="nav-link"><%= t('expertise') %></a>
           </p>
           <p>
-            <a href="/#WhoAmI" class="nav-link">Qui suis-je?</a>
+            <a href="/#WhoAmI" class="nav-link"><%= t('who_am_i') %></a>
           </p>
           <p>
-            <a href="/#IknowThings" class="nav-link">Mes réalisations</a>
+            <a href="/#IknowThings" class="nav-link"><%= t('what_i_ve_done_html') %></a>
           </p>
         </div>
         <!-- Grid column -->
@@ -67,16 +67,16 @@
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4"><i class="fa-solid fa-umbrella"></i>
-            Liens légaux
+            <%= t('legaux') %>
           </h6>
           <p>
-            <a href="/static_pages/legal.html" class="nav-link">Mentions légales</a>
+            <a href="/static_pages/legal.html" class="nav-link"><%= t('mentions') %></a>
           </p>
           <p>
-            <a href="/static_pages/terms_of_service.html" class="nav-link">Conditions générales de service</a>
+            <a href="/static_pages/terms_of_service.html" class="nav-link"><%= t('cgs') %></a>
           </p>
           <p>
-            <a href="/static_pages/privacy.html" class="nav-link">Confidentialité</a>
+            <a href="/static_pages/privacy.html" class="nav-link"><%= t('privacy') %></a>
           </p>
         </div>
         <!-- Grid column -->
