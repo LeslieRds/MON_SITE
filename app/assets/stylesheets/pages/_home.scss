@@ -23,11 +23,41 @@ nav img{
   height: 5vh;
   margin-right: 1.25vh;
 }
+
+main #lang-toggle {
+  display: inline-block;
+  position: fixed; /* ou `absolute`, selon le besoin */
+  bottom: 20px; /* Position depuis le bas */
+  right: 20px; /* Position depuis la droite */
+  z-index: 1000; /* S'assure qu'il est au-dessus des autres éléments */
+  padding: 10px;
+  background-color: none; /* Fond du bouton */
+  color: #000; /* Couleur du texte */
+  border-radius: 5px; /* Bordures arrondies */
+  text-align: center;
+}
+/* Media Query pour les petits écrans */
+@media screen and (max-width: 768px) {
+  #lang-toggle {
+    display: block; /* Assure que le bouton est visible sur petits écrans */
+  }
+}
+main .toggle-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d0469b; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Enlève le soulignement du lien */
+  border-radius: 20px; /* Bords arrondis */
+  transition: background-color 0.3s; /* Animation de fond */
+  &:hover {
+    background-color: #3121ab; /* Couleur de fond au survol */
+  }
+}
+
 nav .nav-link {
   color:black;
-  border-radius: 0;
     &:hover{
-      border-radius: 0;
       text-decoration: underline #ad3e9e;
       scale: 1.1;
       transition: 0.5s; }
