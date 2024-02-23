@@ -45,13 +45,13 @@ main #lang-toggle {
 main .toggle-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #d0469b; /* Couleur de fond */
+  background-color:  #3121ab; /* Couleur de fond */
   color: white; /* Couleur du texte */
   text-decoration: none; /* Enlève le soulignement du lien */
   border-radius: 20px; /* Bords arrondis */
   transition: background-color 0.3s; /* Animation de fond */
   &:hover {
-    background-color: #3121ab; /* Couleur de fond au survol */
+    background-color: #d0469b; /* Couleur de fond au survol */
   }
 }
 
