@@ -14,9 +14,10 @@ body{
 
 // CSS fot the navbar
 nav {
-  height: 8vh;
+  height: 15vh;
   display: flex; /* Définit le conteneur comme un flexbox */
   justify-content: flex-start; /* Alignement des enfants à gauche */
+  background-color: white;
 }
 nav img{
   width: 5vh;
