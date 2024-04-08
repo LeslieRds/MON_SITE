@@ -1,0 +1,27 @@
+.welcome {
+  display: flex; /* Utilise Flexbox pour le conteneur */
+  justify-content: center; /* Centre les colonnes horizontalement */
+  align-items: center; /* Centre les colonnes verticalement */
+  height: 100vh; /* Assure que le conteneur prend toute la hauteur de la fenêtre du navigateur */
+  padding: 40px;
+}
+
+.container-welcome{
+  background-color: white;
+  border: solid black;
+  box-shadow: 0.88vh 0.88vh black;
+
+}
+
+.col-button {
+  margin: 0 10px;
+  text-align: center; /* Centre le contenu (l'image) à l'intérieur de la colonne */
+  padding: 10px; /* Ajoute un peu d'espace autour des colonnes */
+}
+
+.col-button img {
+  width: 100%; /* Fait en sorte que l'image remplisse la colonne */
+  max-width: 200px; /* Limite la largeur maximale de l'image pour éviter qu'elle ne soit trop grande */
+  height: auto; /* Garde le ratio de l'image */
+  cursor: pointer; /* Change le curseur en main lorsque vous survolez l'image */
+}

@@ -1,10 +1,10 @@
 fr:
 #banner
-  subtitle: "Le studio web créatif et perché"
+  subtitle: "Le web studio créatif et perché"
 
 #section: My Iki-quoi
   my_iki_quoi: "My Iki-quoi?"
-  welcome_message_html: "Bienvenue chez <b>My Ikigaï</b>, le studio web créatif et perché où chaque projet prend son envol depuis les sommets inspirants des Alpes. Ma devise capte l'essence de ce je suis: associer ma passion pour la créativité au développement de l'image de votre entreprise en ligne."
+  welcome_message_html: "Bienvenue chez <b>My Ikigaï</b>, le web studio créatif et perché où chaque projet prend son envol depuis les sommets inspirants des Alpes. Ma devise capte l'essence de ce je suis: associer ma passion pour la créativité au développement de l'image de votre entreprise en ligne."
   why_name: "Pourquoi ce nom?"
   ikigai_meaning_html: "L'<b>Ikigaï</b> est un mot japonais qui signifie 'raison d'être'. J'aime dire qu'il est le point d'équilibre de la conjonction des sphères : ce que vous aimez, ce pour quoi vous êtes doué, ce dont le monde a besoin et ce qui peut vous faire vivre. C'est un concept qui m'inspire et qui guide ma démarche professionnelle. Mon studio web, <b>My Ikigaï</b>, est le fruit de ma passion pour le web et ma volonté de créer des espaces numériques qui se distinguent. Laissez-moi vous accompagner dans la réalisation de votre vision, avec l'engagement et la précision que seul mon studio 'créatif et perché' peut vous offrir."
   creative_high: "Créatif et perché"
@@ -35,8 +35,8 @@ fr:
   airbnbrain_text_html: "Projet d'étude 1 : création d'une marketplace type AriBnB"
   smw_text_html: "Projet d'étude 2: création d'une application mobile originale"
   fashionist_text_html: "Projet de certification (temps de réalisation 8h)"
-  invitation_html: "Et si c'était vous?"
-  invitation_text_html: "Nous sommes à un clic de travailler ensemble"
+  invitation_html: "Nous sommes à un clic de travailler ensemble"
+  invitation_text_html: "Prenez RDV dès maintenant >>>"
 
 # section contact
   contact: "Contactez-moi"

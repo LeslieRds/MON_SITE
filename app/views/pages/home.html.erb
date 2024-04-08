@@ -1,3 +1,11 @@
+<!-- Header -->
+<header class="banner">
+  <div class="container">
+    <h1>My Ikigaï</h1><p><%= t('subtitle') %></p>
+  </div>
+  <%= render "shared/flashes" %>
+</header>
+<!-- fin Header -->
 <!-- Main -->
 <main>
   <div id="lang-toggle" class="language-toggle" data-locale="<%= new_locale %>">
@@ -5,41 +13,6 @@
   </div>
   <div class="container">
   <div data-bs-spy="scroll" data-bs-target="#navbarId" data-bs-offset="0"  class="scrollspy rounded-2" tabindex="0">
-
-<!-- section - My Iki-quoi? -->
-  <section id="IkiQuoi">
-      <div class="section1 text">
-        <!-- boutons de navigation -->
-        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="Ikiwhat-tab" data-bs-toggle="tab" data-bs-target="#Ikiwhat" type="button" role="tab" aria-controls="Ikiwhat" aria-selected="true"><%= t('my_iki_quoi') %></button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="why-tab" data-bs-toggle="tab" data-bs-target="#why" type="button" role="tab" aria-controls="why" aria-selected="false"><%= t('why_name') %></button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="creative-tab" data-bs-toggle="tab" data-bs-target="#creative" type="button" role="tab" aria-controls="creative" aria-selected="false">"<%= t('creative_high') %>"?</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="RoR-tab" data-bs-toggle="tab" data-bs-target="#RoR" type="button" role="tab" aria-controls="RoR" aria-selected="false">Ruby on Rails</button>
-          </li>
-        </ul>
-        <!-- fin boutons de navigation -->
-        <!-- zone de texte -->
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="Ikiwhat" role="tabpanel" aria-labelledby="Ikiwhat-tab"><p><%= t('welcome_message_html') %></div>
-          <div class="tab-pane fade" id="why" role="tabpanel" aria-labelledby="why-tab"><p><%= t('ikigai_meaning_html') %></p></div>
-          <div class="tab-pane fade" id="creative" role="tabpanel" aria-labelledby="creative-tab"><ul>
-            <%= t('creative_tab_html') %>
-          </ul></div>
-          <div class="tab-pane fade" id="RoR" role="tabpanel" aria-labelledby="RoR-tab"><h3><%= t('ror') %></h3>
-            <%= t('ror_text_html') %></div>
-        </div>
-        <!-- fin zone de texte -->
-      </div>
-  </section>
-<!-- fin section - My Iki-quoi? -->
-
 <!-- section - Expertise -->
       <section id="Expertise">
         <!-- intro de la section -->
@@ -93,9 +66,45 @@
           </div>
       <!-- fin cartes de mes services -->
           </div>
+          <a class="button" href="https://calendly.com/leslie-rds/rdv-de-decouverte-de-votre-projet"><%= t('contact') %>!</a>
         </div>
       </section>
 <!-- fin de la section mes services -->
+
+<!-- section - My Iki-quoi? -->
+  <section id="IkiQuoi">
+      <div class="section1 text">
+        <!-- boutons de navigation -->
+        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="Ikiwhat-tab" data-bs-toggle="tab" data-bs-target="#Ikiwhat" type="button" role="tab" aria-controls="Ikiwhat" aria-selected="true"><%= t('my_iki_quoi') %></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="why-tab" data-bs-toggle="tab" data-bs-target="#why" type="button" role="tab" aria-controls="why" aria-selected="false"><%= t('why_name') %></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="creative-tab" data-bs-toggle="tab" data-bs-target="#creative" type="button" role="tab" aria-controls="creative" aria-selected="false">"<%= t('creative_high') %>"?</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="RoR-tab" data-bs-toggle="tab" data-bs-target="#RoR" type="button" role="tab" aria-controls="RoR" aria-selected="false">Ruby on Rails</button>
+          </li>
+        </ul>
+        <!-- fin boutons de navigation -->
+        <!-- zone de texte -->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="Ikiwhat" role="tabpanel" aria-labelledby="Ikiwhat-tab"><p><%= t('welcome_message_html') %></div>
+          <div class="tab-pane fade" id="why" role="tabpanel" aria-labelledby="why-tab"><p><%= t('ikigai_meaning_html') %></p></div>
+          <div class="tab-pane fade" id="creative" role="tabpanel" aria-labelledby="creative-tab"><ul>
+            <%= t('creative_tab_html') %>
+          </ul></div>
+          <div class="tab-pane fade" id="RoR" role="tabpanel" aria-labelledby="RoR-tab"><h3><%= t('ror') %></h3>
+            <%= t('ror_text_html') %></div>
+        </div>
+        <!-- fin zone de texte -->
+      </div>
+  </section>
+<!-- fin section - My Iki-quoi? -->
+
 
 <!-- section - Mes langages / outils -->
   <section id="tools">
@@ -158,6 +167,7 @@
           <!--img src="https://res.cloudinary.com/ddt8brfwz/image/upload/v1707148379/IMG_3449_copie_e4fvov_c_crop_ar_1_1_t0ljfq.jpg" class="avatar" -->
 
           <div class="text"><%= t('who_am_i_html') %><%= t('who_am_i_text_html') %>
+          <a class="button" href="https://calendly.com/leslie-rds/rdv-de-decouverte-de-votre-projet"><%= t('contact') %>!</a>
           </div>
         </div>
       </section>
@@ -240,80 +250,20 @@
             </figcaption>
           </figure>
 
-          <figure class="card card--1" style="--image-src: url('https://res.cloudinary.com/ddt8brfwz/image/upload/v1707591371/miles-burke-idhx-MOCDSk-unsplash_vcswt4.jpg')">
+          <figure class="card card--1" style="--image-src: url('https://res.cloudinary.com/ddt8brfwz/image/upload/v1712580888/taylor-kidd-jaKGusGKjwQ-unsplash_xmoaf3.jpg')">
             <figcaption>
               <span class="info">
                 <h3><%= t('invitation_html') %></h3>
                 <span><%= t('invitation_text_html') %></span>
               </span>
+              <span class="links">
+                <a href="https://calendly.com/leslie-rds/rdv-de-decouverte-de-votre-projet"target="_blank"><i class="fa-regular fa-calendar-check"></i></a>
             </figcaption>
           </figure>
         </div>
         </div>
         </section>
 <!-- fin section - Mes réalisations -->
-<!-- contact -->
-  <section id="Contact">
-    <div class="section1 text">
-        <div class="flex items-center min-h-screen">
-            <div class="container mx-auto">
-              <div class="max-w-xl mx-auto my-10  p-5">
-              <div class="text-center">
-                <h1 class="my-3 ">
-                  <%= t('contact') %>!
-                </h1>
-                <p class="text-gray-400 dark:text-gray-400"><%= t('contact_text') %></p>
-              </div>
-
-              <div class="m-7">
-                <form action="https://api.web3forms.com/submit" method="POST" id="form">
-                  <input type="hidden" name="access_key" value="ebdfb9c8-dc64-473a-b90c-76c33b531009" />
-                  <input type="hidden" name="subject" value="New Submission from Web3Forms" />
-                  <input type="checkbox" name="botcheck" id="" style="display: none;" />
-                <div class="inputs">
-                  <div class="flex mb-6 space-x-4">
-                    <div class="w-full md:w-1/2">
-                      <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400"><%= t('contact_firstname') %></label>
-                      <input type="text" name="name" id="first_name" placeholder="Prince" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
-                    </div>
-                    <div class="w-full md:w-1/2">
-                      <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400"><%= t('contact_lastname') %></label>
-                      <input type="text" name="last_name" id="lname" placeholder="Charmant" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
-                    </div>
-                  </div>
-                </div>
-                <div class="inputs">
-                  <div class="flex mb-6 space-x-4">
-                    <div class="w-full md:w-1/2">
-                      <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email </label>
-                      <input type="email" name="email" id="email" placeholder="prince.charmant@feerie.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
-                    </div>
-
-                    <div class="w-full md:w-1/2">
-                      <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400"><%= t('contact_number') %></label>
-                      <input type="text" name="phone" id="phone" placeholder="0123456789" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
-                    </div>
-                  </div>
-                </div>
-                <div class="inputs">
-                  <div class="mb-6">
-                    <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400"><%= t('contact_message') %></label>
-
-                    <textarea rows="5" name="message" id="message" placeholder="Présentez moi votre projet." class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
-                  </div>
-                </div>
-                  <div class="mb-6">
-                    <button type="submit" class="w-full px-3 py-4 text-white"><%= t('contact_send') %></button>
-                  </div>
-                  <p class="text-base text-center text-gray-400" id="result"></p>
-                </form>
-              </div>
-            </div>
-            </div>
-          </div>
-      </div>
-    </section>
-<!-- fin contact -->
     <!-- fin zone scrollspy -->
     </div>
   </div>

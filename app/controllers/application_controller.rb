@@ -14,4 +14,10 @@ class ApplicationController < ActionController::Base
   def new_locale
     I18n.locale == :fr ? 'en' : 'fr'
   end
+
+  helper_method :welcomepage?
+
+  def welcomepage?
+    controller_name == 'pages' && action_name == 'welcome'
+  end
 end

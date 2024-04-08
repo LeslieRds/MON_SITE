@@ -1,7 +1,7 @@
   <!-- Navbar + Header -->
-    <div class="container">
+
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
 
           <!-- logo -->
@@ -13,10 +13,10 @@
           <div class="collapse navbar-collapse bg-body-tertiary" >
             <ul class="nav nav-pills navbar-nav me-4 mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/#IkiQuoi"><%= t('my_iki_quoi') %></a>
+                <a class="nav-link" href="/#Expertise"><%= t('expertise') %></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/#Expertise"><%= t('expertise') %></a>
+                <a class="nav-link" aria-current="page" href="/#IkiQuoi"><%= t('my_iki_quoi') %></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/#WhoAmI"><%= t('who_am_i') %></a>
@@ -25,20 +25,12 @@
                 <a class="nav-link" href="/#IknowThings"><%= t('what_i_ve_done_html') %></a>
               </li>
             </ul>
-                <a class="button" href="/#Contact"><%= t('contact') %>!</a>
+                <a class="button" href="https://calendly.com/leslie-rds/rdv-de-decouverte-de-votre-projet"><%= t('contact') %>!</a>
           <!-- fin bouton et menu responsive -->
           </div>
         </div>
       </nav>
       <!-- fin Navbar -->
 
-      <!-- Header -->
-      <header class="banner">
-        <div class="container">
-          <h1>My Ikigaï</h1><p><%= t('subtitle') %></p>
-        </div>
-        <%= render "shared/flashes" %>
-      </header>
-      <!-- fin Header -->
-    </div>
+
     <!-- fin Navbar + Header -->

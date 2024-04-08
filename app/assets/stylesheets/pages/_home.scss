@@ -138,6 +138,30 @@ main h1 {
   scroll-margin-top: 18.8vh;
 }
 
+// CSS pour le bouton contact
+.button{
+  background: linear-gradient(90deg, rgba(52,36,169,0.5410758053221288) 0%, rgba(199,38,223,0.5410758053221288) 100%);
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+  padding: 15px;
+  margin-bottom: 25px;
+    &:hover{
+      box-shadow: 0.88vh 0.88vh black;
+      scale: 1.1;
+      background: linear-gradient(90deg, rgba(52,36,169,1) 0%, rgba(199,38,223,1) 100%);
+      color: white;
+    }
+    &:after{
+      content: '';
+      width: 0;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+      transition: all 0.5s linear;  }
+    }
+
 // CSS body
 main{
   display: flex;

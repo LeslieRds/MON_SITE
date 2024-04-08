@@ -18,12 +18,12 @@
     <!-- Start cookieyes banner -->
     <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/58739e9c6f147a3d8f087883/script.js"></script>
     <!-- End cookieyes banner -->
-    <title>My Ikigaï : Le studio web en Tarentaise </title>
+    <title>My Ikigaï web studio by Leslie Rados</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="application-name" content="My Ikigaï">
     <meta name="author" content="Leslie Rados">
-    <meta name="description" content="My Ikigaï est un studio de développement web, situé à Bourg-Saint-Maurice en France. Il est spécialisé dans le développement fullstack d'applications web. Une démarche mobile First et orienté utilisateur. Je propose un accompagnement complet depuis la création de votre identité, à votre site web. Je propose également des packs pour les créateurs d'entreprise.">
+    <meta name="description" content="My Ikigaï est un studio de développement web, créé et dirigé par Leslie Rados, situé à Bourg-Saint-Maurice en France. Spécialisé dans le développement fullstack d'applications web. Une démarche mobile First et orienté utilisateur. Je propose un accompagnement complet depuis la création de votre identité, à votre site web.">
     <meta name="keywords" content="web developpement, developpement web, fullstack, graphisme, studio web, ruby on rails, le wagon, concepteur applications, conceptrice web, femme développeur, web au féminin, ikigai">
     <meta name="referer" content="http">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,8 +67,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@800;900&family=Londrina+Shadow&family=Londrina+Solid:wght@100;300&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-
-
   </head>
 
   <body>
@@ -184,7 +182,9 @@ form.addEventListener("submit", function (e) {
 });
 </script>
 
+  <% unless welcomepage? %>
     <%= render 'shared/banner' %>
+  <% end %>
       <p class="alert"><%= alert %></p>
       <p class="notice"><%= notice %></p>
     <%= render 'shared/flashes' %>
@@ -192,8 +192,9 @@ form.addEventListener("submit", function (e) {
     <%= yield %>
     </div>
     <footer>
+  <% unless welcomepage? %>
     <%= render 'shared/footer' %>
-
+  <% end%>
     </footer>
       <!-- fichier JavaScript externe ici -->
     <script src="app/javascript/controllers/script.js"></script>

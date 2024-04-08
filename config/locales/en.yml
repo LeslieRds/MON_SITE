@@ -35,8 +35,8 @@ en:
   airbnbrain_text_html: "Study project 1: creation of an Airbnb-type marketplace"
   smw_text_html: "Study project 2: creation of an original mobile application"
   fashionist_text_html: "Certification project (completion time 8h)"
-  invitation_html: "What if it was you?"
-  invitation_text_html: "We are just a click away from working together."
+  invitation_html: "We are just a click away from working together"
+  invitation_text_html: "Take your appointment now >>>"
 
 #section contact
   contact: "Contact me"
