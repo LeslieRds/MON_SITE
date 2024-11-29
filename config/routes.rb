@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  root to: "pages#welcome"
+  root to: "pages#home"
 
-  get 'home', to: "pages#home"
   get 'legal', to: "pages#legal"
   get 'terms_of_service', to: "pages#terms_of_service"
   get 'privacy', to: "pages#privacy"
